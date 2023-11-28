@@ -168,11 +168,11 @@ footer .container { margin: 0 auto; display: flex; justify-content: space-betwee
 
 .subject img { width: 150px; height: 150px; border-radius: 50%;  }
 
-.subject a { display: inline-block; margin-right: 10px; color: #333; font-size: 20px;  }
+.subject a { display: inline-block; margin-top: 10px; color: #8e8686; font-size: 40px; text-decoration: none;  }
 
 .subject p{ text-transform: uppercase;  }
 
-.library a { display: inline-block; margin-right: 10px; color: #333; font-size: 20px; }
+.library a { display: inline-block; margin-top: 10px; color: #9a9191; font-size: 30px; text-decoration: none; }
 
 .library img{ width: 150px; height: 150px; border-radius: 50%;  }
 
