@@ -192,9 +192,9 @@ ul li a { text-decoration: none; color: white;  }
 footer ion-icon{ font-size: 20px; color: #fbf8f8; align-items: center; justify-content: left;  }
 footer .bottom-footer  ion-icon{ color: green; }
 
-#face{ color: blue; background-color: #f2f2f2; border-radius: 60%; font-size: 60px; }
-#ytube{ color: red; background-color: #f2f2f2; border-radius:15px; font-size: 60px; }
-#whapp{ color:  #f5f1f1; background-color: green; border-radius: 30%; font-size: 60px; }
+#face{ color: blue; background-color: #f2f2f2; border-radius: 60%; font-size: 40px; }
+#ytube{ color: red; background-color: #f2f2f2; border-radius:15px; font-size: 40px; }
+#whapp{ color:  #f5f1f1; background-color: green; border-radius: 30%; font-size: 40px; }
 
 /* #tk{
   color: rgb(220, 6, 188) ;
