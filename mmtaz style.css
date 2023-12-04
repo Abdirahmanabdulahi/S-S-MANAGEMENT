@@ -195,13 +195,13 @@ input[type="password"] { width: 100%; padding: 10px; border: 1px solid #ccc; bor
 
 .Our-Mission h1{  padding-top: 40px; margin-left: 30px; color: green;}
 .Our-Mission h1 ion-icon{ color: green;}
-.Our-Mission p{ color: rgb(100, 96, 96);font-size: 18px; text-align: start; margin-left: 10px;
+.Our-Mission p{ color: rgb(37, 35, 35);font-size: 18px; text-align: start; margin-left: 10px;
    font-family: 'Times New Roman', Times, serif;}
 .Our-Mission{}   
 
 .Our-Vision h1{ padding-top: 40px; margin-left: 30px; color: green;}
 .Our-Vision h1 ion-icon{ color: green;}
-.Our-Vision p{ color: rgb(100, 96, 96);font-size: 18px; text-align: start; margin-left: 10px;
+.Our-Vision p{ color: rgb(40, 38, 38);font-size: 18px; text-align: start; margin-left: 10px;
     font-family: 'Times New Roman', Times, serif; }
 /* Start About ours section */
 
