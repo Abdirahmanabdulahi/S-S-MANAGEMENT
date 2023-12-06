@@ -39,6 +39,35 @@
     <!-- End header section -->
 
    
+<!-- start Sidebar section -->
+<div class="sidemenu">
+  <div class="brandname">
+      <h1>Al-mumtaz school&nbsp;<ion-icon name="school-outline"></ion-icon></h1>
+
+  </div>
+  <ul>
+      
+      <li><ion-icon name="grid-outline"></ion-icon>&nbsp;Dashboard</li>
+      <li><ion-icon name="man-outline"></ion-icon>&nbsp;Teachers</li>
+      <li><ion-icon name="people-outline"></ion-icon>&nbsp;Students</li>
+      <li><ion-icon name="people-outline"></ion-icon>&nbsp;Classes</li>
+      <li><ion-icon name="pencil-outline"></ion-icon>&nbsp;Exam</li>
+      <li><ion-icon name="checkmark-done-outline"></ion-icon>&nbsp;Attandencde</li>
+      <li><ion-icon name="stats-chart-outline"></ion-icon>&nbsp;Activities</li>
+      <li><ion-icon name="reader-outline"></ion-icon>&nbsp;Academic</li>
+      <li><ion-icon name="mail-outline"></ion-icon>&nbsp;SMS</li>
+      <li><ion-icon name="pulse-outline"></ion-icon>&nbsp;Finance</li>
+      <li><ion-icon name="calendar-outline"></ion-icon>&nbsp;Events</li>
+      <li> <ion-icon name="people-circle-outline"></ion-icon>&nbsp;Meeting</li>
+      <li> <ion-icon name="settings-outline"></ion-icon>&nbsp;Setting</li>
+   
+      
+  </ul>
+</div> <!-- End Sidebar section -->
+
+
+
+
 
        
     <!-- Start main dashboard -->
@@ -50,29 +79,31 @@
         <div class="main-cards" >
           <div class="card">
             <div class="card-inner">
-              <h1>teachers</h1>
+              <h1>20+ teachers</h1>
               <span><ion-icon name="woman" style="color: aliceblue;"></ion-icon></ion-icon></span>
             </div>
-           <h1>20</h1>
+      
+           <button class="btn btn-sm btn-"><a href="Teacher.html">NEW TEACHER</a></button>
           </div>
 
 
           
             <div class="card">
               <div class="card-inner">
-                <h1>students</h1>
+                <h1>300 &nbsp;students</h1>
                 <span><ion-icon name="woman" style="color: aliceblue;"></ion-icon></ion-icon></ion-icon></span>
               </div>
-             <h1>300</h1>
+              <button class="btn btn-sm btn-"><a href="Students.html">NEW STD</a></button>
             </div>
 
 
             <div class="card">
               <div class="card-inner">
-                <h1>classes</h1>
+                <h1>20+ classes</h1>
                 <span><ion-icon name="home" style="color: aliceblue;"></ion-icon></span>
               </div>
-             <h1>20</h1>
+            
+             <button class="btn btn-sm btn-danger" style="margin-left: 50%; width: 30%; height: 30%;"><a href="Exam.html">NEW</a></button>
             </div>
 
             
@@ -81,10 +112,12 @@
 
             <div class="card">
               <div class="card-inner">
-                <h1>offices</h1>
-                <span><ion-icon name="storefront" style="color: aliceblue;"></ion-icon></span>
+                <h1>4+ ExamS</h1> &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
+                  <h1><img src="exam 4.png" alt="exam"style="width: 40%;"></h1>
+                  
               </div>
-             <h1>2</h1>
+            
+             <button class="btn btn-sm btn-"><a href="Exam.html">NEW EXAM</a></button>
             </div>
 
         </div>
@@ -156,13 +189,13 @@
          
         </div>
 
+        
         <div class="card">
           <div class="card-inner">
-            <h1>Exam</h1> &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;
-              <h1><img src="exam 4.png" alt="exam"style="width: 40%;"></h1>
+            <h1>offices</h1>
+            <span><ion-icon name="storefront" style="color: aliceblue;"></ion-icon></span>
           </div>
-         <h1>4+</h1>
-        
+         <h1>2</h1>
         </div>
        
         <div class="card">
@@ -240,7 +273,34 @@
         
         
         
-       
+        <div>
+          <canvas id="myChart"></canvas>
+        </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        
+        <script>
+          const ctx = document.getElementById('myChart');
+        
+          new Chart(ctx, {
+            type: 'bar',
+            data: {
+              labels: ['Jan', 'Feb', 'March', 'Apr', 'May', 'Jun' ,'Jul', 'Aug','Sep','Oct','Nov','Dec', ],
+              datasets: [{
+                label: '# of Votes',
+                data: [33, 17, 15, 12, 9, 7, 5, 6, 3, 5, 2, 3],
+                borderWidth: 1
+              }]
+            },
+            options: {
+              scales: {
+                y: {
+                  beginAtZero: true
+                }
+              }
+            }
+          });
+        </script>
         
         
         
@@ -252,36 +312,7 @@
       <!-- End main dasgboard -->
 
 
- <!-- start Sidebar section -->
- <div class="sidemenu">
-  <div class="brandname">
-      <h1>Al-mumtaz school&nbsp;<ion-icon name="school-outline"></ion-icon></h1>
-
-  </div>
-  <ul>
-      
-      <li><ion-icon name="grid-outline"></ion-icon>&nbsp;Dashboard</li>
-      <li><ion-icon name="man-outline"></ion-icon>&nbsp;Teachers</li>
-      <li><ion-icon name="people-outline"></ion-icon>&nbsp;Students</li>
-      <li><ion-icon name="people-outline"></ion-icon>&nbsp;Classes</li>
-      <li><ion-icon name="pencil-outline"></ion-icon>&nbsp;Exam</li>
-      <li><ion-icon name="checkmark-done-outline"></ion-icon>&nbsp;Attandencde</li>
-      <li><ion-icon name="stats-chart-outline"></ion-icon>&nbsp;Activities</li>
-      <li><ion-icon name="reader-outline"></ion-icon>&nbsp;Academic</li>
-      <li><ion-icon name="mail-outline"></ion-icon>&nbsp;SMS</li>
-      <li><ion-icon name="pulse-outline"></ion-icon>&nbsp;Finance</li>
-      <li><ion-icon name="calendar-outline"></ion-icon>&nbsp;Events</li>
-      <li> <ion-icon name="people-circle-outline"></ion-icon>&nbsp;Meeting</li>
-      <li> <ion-icon name="settings-outline"></ion-icon>&nbsp;Setting</li>
-   
-      
-  </ul>
-</div> <!-- End Sidebar section -->
-
-
-
-
-
+ 
 
 
 
