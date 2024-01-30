@@ -2,478 +2,438 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="mmtaz style.css">
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="myschool.CSS">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>S SMANAGEMENT</title>
+
+    <title>school website</title>
 </head>
-<body style="  ">
+<body style="background-color: rgb(121, 172, 172);">
+    <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-success sticky-top"> 
+        <div class="container-fluid">
+          <a class="navbar-brand" style="color: white;" href="#"> <img src="mtz logo.jpg" class="" alt="" width="50"> AL-MUMTAAZ <span style="font-size: 8px; color: blue;">Primary&Secondary School<ion-icon name="school-outline"></ion-icon></span>&nbsp;</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>&nbsp;&nbsp;
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul id="mnu" class="navbar-nav me-auto mb-2 mb-lg-0 sticky-top">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="About Us.html">About</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Forms.html">Register</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Verify.html">Verify</a></li>
 
-  
-  <!-- Start  Nav section -->
-<section class="row" id="nav">
-  <!-- Start header section -->
-  <header class="header bg-success">
-    <div class="menu-icon">
-      <a href="https://www.facebook.com/almumtaazschool?mibextid=2JQ9oc"><ion-icon class="f-icon" name="logo-facebook" style=" font-size: 50px;"> </a></ion-icon>
-      <span>
-        <h5>facebook.com/almumtaazschool</h5>
-      </span> &nbsp;&nbsp;
-    </div>
-    
-
-
-    <div class="header-right ">
-      
-      <a href="Verify.html">Verify</a>
-      <!-- <input class="form-control border-end-0 border rounded-pill" type="search" placeholder="Search" id="example-search-input">
-        <span class="input-group-append">
-            <button class="btn btn-outline-secondary bg-white border-bottom-0 border rounded-pill ms-n8" type="button">
-              <ion-icon name="search-outline"></ion-icon>
-            </button>
-           
-        </span> -->
-
-
-        <div class="input-group mb-1 text-center "  >
-          <input type="search" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
-          <button class="btn btn-primary btn-xs" type="button" id="button-addon2"><ion-icon name="search-outline"></ion-icon>Search</button>
-        </div>  
-    </div>
-  </header>
-  <!-- End header section -->
-
-  <!-- Start Navbar  -->
-<nav class="navbar  navbar-expand-sm " >
-    <div class="container-fluid">
-        <div class="Logo d-flex flex-row bd-highlight mb-9 shadow-lg p-2 mb-5  rounded">
-            <img style="width: 20%; height: 20%;  margin-top: 15px; border-radius: 100px;" src="mtz logo.jpg" alt="Logo">&nbsp;&nbsp;&nbsp;
-        <h1 style="text-align: center;">Al-Mumtaz Primary<br>&Secondary School<ion-icon name="school-outline"></ion-icon></h1>
-</div>
-        <div class="Menu d-flex  shadow-lg p-2 mb-5  rounded" id="navbarSupportedContent" >
-            <ul class="menu-bar-nav me-auto mb-3 mb-lg-0">
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html" >Home</a></li>
-                <li  class="nav-item"><a class="nav-link "  href="About Us.html">About</a></li>
-                <li  class="nav-item"><a class="nav-link "  href="contact.html">Contact</a></li>
-                <li  class="nav-item"><a class="nav-link "  href="Register.html">Registration</a></li>
-                <li  class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarSupportedContent"  href="Dashboard.html" rel="button" data-bs-toggle="dropdown" aria-expanded="false" >Dashboard</a>
-
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="Dashboard.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dashboard
+                </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li class="dropdown-divider"></li>
-                    <li class="dropdown-item"><a href="Dashboard.html"><ion-icon name="grid-outline"></ion-icon>&nbsp;Dashboard</a></li>
-                    <li class="dropdown-item"><a href="Teacher.html"><ion-icon name="man-outline"></ion-icon>&nbsp;Teachers</a></li>
-                    <li class="dropdown-item"><a href="Students.html"><ion-icon name="people-outline"></ion-icon>&nbsp;Students</a></li>
-                    <li class="dropdown-item"><a href="Exam.html"><ion-icon name="pencil-outline"></ion-icon>&nbsp;Exam</a></li>
-                    <li class="dropdown-item"><a href="Attendence.html"><ion-icon name="checkmark-done-outline"></ion-icon>&nbsp;Attandence</a></li>
-                    <li class="dropdown-item"><a href=""><ion-icon name="stats-chart-outline"></ion-icon>&nbsp;Activities</a></li>
-                    <li class="dropdown-item"><a href=""><ion-icon name="reader-outline"></ion-icon>&nbsp;Academic</a></li>
-                    <li class="dropdown-item"><a href=""><ion-icon name="mail-outline"></ion-icon>&nbsp;SMS</a></li>
-                    <li class="dropdown-item"><a href="finance.html"><ion-icon name="pulse-outline"></ion-icon>&nbsp;Finance</a></li>
-                    <li class="dropdown-item"><a href=""><ion-icon name="calendar-outline"></ion-icon>&nbsp;Events</a></li>
-                    <li class="dropdown-item"><a href=""><ion-icon name="people-circle-outline"></ion-icon>&nbsp;Meeting</a></li>
-                    <li class="dropdown-item"><a href=""><ion-icon name="settings-outline"></ion-icon>&nbsp;Setting</a></li>
+                  <li><a class="dropdown-item" href="">DASHBOARD</a></li>
+                  <li><a class="dropdown-item" href="Teacher.html"><ion-icon name="man-outline"></ion-icon>TEACHEARS MANAGE</a></li>
+                  <li><a class="dropdown-item" href="Students.html"><ion-icon name="people-outline"></ion-icon>&nbsp;STUDENTS MANAGE</a></li>
+                  <li><a class="dropdown-item" href="Classes.html"><ion-icon name="home"></ion-icon>&nbsp;CLASS MANAGE </a></li>
+                  <li><a class="dropdown-item" href="Exam.html"><ion-icon name="pencil-outline"></ion-icon>&nbsp;EXAM MANAGE  </a></li>
+                  <li><a class="dropdown-item" href="Attendence.html"><ion-icon name="checkmark-done-outline"></ion-icon>ATTENDANCE MANAGE</a></li>
+                  <li><a class="dropdown-item" href=""><ion-icon name="stats-chart-outline"></ion-icon>&nbsp;ACTIVITIES MANAGE</a></li>
+                  <li><a class="dropdown-item" href=""><ion-icon name="reader-outline"></ion-icon>&nbsp;ACADEMIC MANAGE</a></li>
+                  <li><a class="dropdown-item" href=""><ion-icon name="accessibility"></ion-icon>&nbsp; EMPLOYEE MANAGE</a></li>
+                  <li><a class="dropdown-item" href="finance.html"><ion-icon name="logo-usd"></ion-icon>&nbsp;FINANCE MANAGE</a></li>
+                  <li><a class="dropdown-item" href=""><ion-icon name="calendar-outline"></ion-icon>&nbsp;EVENTS MANAGE </a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href=""><ion-icon name="people-circle-outline"></ion-icon>&nbsp;Meeting </a></li>
+                  <li><a class="dropdown-item" href=""><ion-icon name="warning"></ion-icon>&nbsp;REPORTS</a></li>
+                  <li><a class="dropdown-item" href=""><ion-icon name="person"></ion-icon>&nbsp;USERS MANAGE</a></li>
+                  <li><a class="dropdown-item" href=""><ion-icon name="receipt"></ion-icon>&nbsp;COMPLAIN</a></li>
+                  <li><a class="dropdown-item" href=""><ion-icon name="mail-outline"></ion-icon>&nbsp; SMS </a></li>
+                  <li><a class="dropdown-item" href=""><ion-icon name="settings-outline"></ion-icon>&nbsp;SETTING</a></li>
                 </ul>
-            </li>
-            </ul>
-            
-
-            <form class="d-flex text-info ">
-              <button class="btn  btn-lg  btn-success " type=" submit"><a href="login.html">Login </button></a></button>&nbsp;&nbsp;
-              <button class="btn  btn-lg   btn-primary " type="submit" ><a href="log out.html">SingUp</a></button>
-        </form>
-        </div>
-        
-    </div>
-</nav> 
- <!-- End navbar -->
-
-       <!-- Start carousel section-->
-
-  <div id="homen">
-    <div class=" align-item-center">
-      <div class="row">
-
-        <div class="col-6" style="margin-top: 10%;">
-          <h3><b>Welcome TO AL-MUMTAZ</b><br>Primary&Secondary School</h3>
+              </li> &nbsp; &nbsp;
+             
+              <button class="btn btn-sm btn-success btn-outline-dark" type="submit"><a style="color: aliceblue; text-decoration: none;" href="login.html">Log in </a></button>&nbsp;
+              <button class="btn btn-sm btn-primary btn-outline-dark" type="submit"><a style="color: rgb(10, 10, 10); text-decoration: none;" href="Sing Up.html">Sing up</a></button>
+            </ul> &nbsp;
+            <form class="d-flex">
+              <!-- <input class="form-control me-2" type="search" placeholder="Search "  aria-label="Search" >
+              <button class="btn btn-sm  btn-light btn-outline-dark" type="submit">Search<ion-icon name="pencil-outline"></ion-icon>&nbsp;</button>
+            -->
+            <input type="search" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
+            <button class="btn btn-light btn-sm  btn-outline-dark"  type="submit" id="button-addon2"><ion-icon name="search-outline"></ion-icon>Search</button>
          
-          <p class="h6" style="font-family: 'Times New Roman', Times, serif;">Al-mumtaz primary&secondary school is a Beacon of Excellence in Academic Pursuits. <br>
-            Al-mumtaz's Educators stands day&night  as the Epicenter of Educational Distinction.</p> <br>
+            </form>
+          </div>
+        </div>
+      </nav> 
+
+      <section>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         
-              <p class="h6" style="font-family: 'Times New Roman', Times, serif;">  Al-mumtaz P&S school Where Excellence in Education Finds Optimum Scholars. <br>
-                Al-mumtaz Scholars is the Residence of Superior Learning & academic Quality.
-                </p> 
-              <button class="btn tbn-lg btn-danger" style="margin-left: 50%; margin-bottom: 10px; padding: 10px;"><a href="About Us.html">Learn More</a></button></div>
+            <div class=" container align-item-center">
+              <div class="row">
         
-        <div class="col 6">
-  <div id="carouselExampleIndicators" class="carousel slide " data-bs-ride="carousel" >
-   <div class="carousel-indicators color-primary">
-     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active  " aria-current="true" aria-label="Slide 1"></button>
-     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-   </div>
- <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-   <div class="carousel-inner">
-     <div class="carousel-item active">
-       <img src="Al-mumtaz/teachers.jpg" class="d-block w-100" alt=".Teachers.">
-       <div class="carousel-caption d-none d-md-block"><h1>WELCOME TO <span> ALMUMTAZ</span></h1></div>
-     </div>
-     <div class="carousel-item">
-       <img src="Al-mumtaz/std micro.jpg" class="d-block w-100" alt=".std micro.">
-       <div class="carousel-caption d-none d-md-block"><h1>WELCOME TO <span> ALMUMTAZ</span></h1></div>
-     </div>
-     <div class="carousel-item">
-       <img src="Al-mumtaz/with techers.jpg" class="d-block w-100" alt="with teachers.">
-       <div class="carousel-caption d-none d-md-block"><h1>WELCOME TO <span> ALMUMTAZ</span></h1></div>
-       </div>
-       <div class="carousel-item">
-         <img src="Al-mumtaz/std gils.jpg" class="d-block w-100" alt=".std gils.">
-         <div class="carousel-caption d-none d-md-block"><h1> <span>WELCOME TO</span> ALMUMTAZ</h1></div>
-         </div>
-         <div class="carousel-item">
-           <img src="images/ardayda.jpg" class="d-block w-100" alt=".ardayda.">
-           <div class="carousel-caption d-none d-md-block"><h1> <span >WELCOME TO</span> ALMUMTAZ</h1></div>
-           </div>
-           <div class="carousel-item">
-             <img src="Al-mumtaz/exam teacher with.jpg" class="d-block w-100" alt=".std exam teacher.">
-             <div class="carousel-caption d-none d-md-block"><h1> <span>WELCOME TO</span> ALMUMTAZ</h1></div>
-             </div>
-     </div>
-   </div>
-   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-     <span class="visually-hidden">Previous</span>
-   </button>
-   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-     <span class="visually-hidden">Next</span>
-   </button>
- </div>
- </div>
+                <div class="col-6" style="margin-top: 10%;  margin-bottom: 10%;">
+                  <h3 id="try"><b>Welcome TO AL-MUMTAZ</b><br>Primary&Secondary School</h3>
+                 
+                  <p class="h6" style="font-family: 'Times New Roman', Times, serif;">Al-mumtaz primary&secondary school is a Beacon of Excellence in Academic Pursuits. <br>
+                    Al-mumtaz's Educators stands day&night  as the Epicenter of Educational Distinction.</p> <br>
+                
+                      <p class="h6" style="font-family: 'Times New Roman', Times, serif;">  Al-mumtaz P&S school Where Excellence in Education Finds Optimum Scholars. <br>
+                        Al-mumtaz Scholars is the Residence of Superior Learning & academic Quality.
+                        </p> 
+                      <button class="btn w- btn-danger" style="margin-left: 30%; margin-bottom: 10px; padding: 10px; text-decoration: none;"><a href="About Us.html"  style="color: aliceblue; text-decoration: none;">Learn More</a></button>
+                    </div>
 
-      </div>
-    </div>
-    </div> 
+                    <div class="col-6" style="margin-top: 10%; margin-bottom: 10%;  ">
+                     <img src="images/homepage.jpg" width="500" alt="">
+                        </div>
 
-  </div> 
-</section>
- <!-- End carousel section-->
+        </div> 
+        </div>   
+        </div>   
+      </section>
 
+      <SEction>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/ardayda.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>First slide label</h5>
+                  <p>Some representative placeholder content for the first slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/teachers.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Second slide label</h5>
+                  <p>Some representative placeholder content for the second slide.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/std 8 end .jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Third slide label</h5>
+                  <p>Some representative placeholder content for the third slide.</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </SEction>
 
- <section >
-  <div class="col-12  ">
-    <marquee behavior="left" direction=""> <h1> <span>WELCOME TO</span> ALMUMTAZ PAGES IN BELOW YOU KNOW MORE ABOUT US</h1></marquee>
-    <H1>Click dotes below to get more infor</H1>
-  </div>
-</section>
-
- <!--Started Banner section-->
+       <!--Started Banner section-->
 <div class="banner banner-expand-sm ">
-  <div class="col">
-<input type="radio" name="slider" id="Home" checked style="width: 20%;">
-<input type="radio" name="slider" id="About" checked style="width: 20%;">
-<input type="radio" name="slider" id="Contact" checked style="width: 20%;">
-<input type="radio" name="slider" id="Register" checked style="width: 20%;">
-<input type="radio" name="slider" id="Dashboard" checked style="width: 10%;">
-<input type="radio" name="slider" id="" checked style="width: 5%;">
-
-
-<section class="container container-expand-sm">
- 
-  <div class="content content-1 ">
-      <div class="title">Home</div>
-      <p>Yuo cat get or ready our school more  buses </p>
-       <div class="col-9 d-flex">
-        <div class="home" >
-          
-          <img src="bus3.png" alt="">
-          
-        </div>
-        <div class="home" >
-          
-          <img src="bus3.png" alt="">
-          
-        </div>
-        <div class="home" >
-          
-          <img src="bus3.png" alt="">
-          
-        </div>
-        </div>
-     
-       
-    </div>
-
-
-    
-  <div class="content content-2">
-      <div class="title">About</div>
-      <p>We wanted to have an opportunity For build in the Somali community, culture, and language. <br>
-        Somalis families wanted to have an opportunity for deep family learning. <br>
-        We hope to continue creating more opportunities with the Somali 
-        community in the future. <br> Al-mumtaz is the Home of Quality Education.
-        </p>
-       </div>
-      <div class="content content-3">
-      <div class="title">Contact</div>
-      <p>Contact module we used for managing the contact information displayed our school.
-         And include more details such as our organization's address, phone numbers,
-          email addresses And google map</p>
-  </div>
+    <div class="col">
+  <input type="radio" name="slider" id="Home" checked style="width: 20%;">
+  <input type="radio" name="slider" id="About" checked style="width: 20%;">
+  <input type="radio" name="slider" id="Contact" checked style="width: 20%;">
+  <input type="radio" name="slider" id="Register" checked style="width: 20%;">
+  <input type="radio" name="slider" id="Dashboard" checked style="width: 10%;">
+  <input type="radio" name="slider" id="hide" checked style="width: 5%;">
   
-  <div class="content content-4">
-      <div class="title">Register</div>
-      <p>Registration module manages the enrollment of students for school,Include Student Full information.
-        First Select or fill your FullName , your ID, your class,  your Birth Date, your  GENDER, your Email-Address,
-        your District, your Parent Phone Number, your Phone Number, your Responsible No.</p>
+  
+  <section class="container container-expand-sm">
+   
+    <div class="content content-1 ">
+        <div class="title">Home</div>
+        <p>Yuo cat get or ready our school more  buses </p>
+         <div class="col-9 d-flex">
+          <div class="home" >
+            
+            <img src="bus3.png" alt="">
+            
+          </div>
+          <!-- <div class="home" >
+            
+            <img src="bus3.png" alt="">
+            
+          </div>
+          <div class="home" >
+            
+            <img src="bus3.png" alt="">
+            
+          </div> -->
+          </div>
+       
+         
+      </div>
+  
+  
+      
+    <div class="content content-2">
+        <div class="title">About</div>
+        <p>We wanted to have an opportunity For build in the Somali community, culture, and language. <br>
+          Somalis families wanted to have an opportunity for deep family learning. <br>
+          We hope to continue creating more opportunities with the Somali 
+          community in the future. <br> Al-mumtaz is the Home of Quality Education.
+          </p>
+         </div>
+        <div class="content content-3">
+        <div class="title">Contact</div>
+        <p>Contact module we used for managing the contact information displayed our school.
+           And include more details such as our organization's address, phone numbers,
+            email addresses And google map</p>
+    </div>
+    
+    <div class="content content-4">
+        <div class="title">Register</div>
+        <p>Registration module manages the enrollment of students for school,Include Student Full information.
+          First Select or fill your FullName , your ID, your class,  your Birth Date, your  GENDER, your Email-Address,
+          your District, your Parent Phone Number, your Phone Number, your Responsible No.</p>
+    </div>
+    <div class="content content-5">
+        <div class="title">Dashboard</div>
+        <p>Dashboard Admin
+          The person in this module has control over the entire system as he/she can add, delete anyone from the system. The admin can view the details of another person and can edit any details. The users from another module will send the request to admin for any change.</p>
+    </div>
+    <div class="content content-6"> </div>
+  </section>
   </div>
-  <div class="content content-5">
-      <div class="title">Dashboard</div>
-      <p>Dashboard Admin
-        The person in this module has control over the entire system as he/she can add, delete anyone from the system. The admin can view the details of another person and can edit any details. The users from another module will send the request to admin for any change.</p>
-  </div>
-</section>
-</div>
- </div> <br><br><br>
+   </div> <br><br><br>
+  
+   <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const radioButtons = document.querySelectorAll('input[type="radio"]');
+      const contents = document.querySelectorAll('.content');
+  
+      let currentIndex = 0;
+  
+      function showContent(index) {
+        contents.forEach(content => {
+          content.style.display = "none";
+        });
+  
+        contents[index].style.display = "block";
+        radioButtons[index].checked = true;
+      }
+  
+      function nextContent() {
+        currentIndex = (currentIndex + 1) % contents.length;
+        showContent(currentIndex);
+      }
+  
+      setInterval(nextContent, 4000); // Change content every 5 seconds (adjust as needed)
+    });
+  </script>
+  
+  
+  
+  <!--End Banner section-->
 
-
-
-<!--End Banner section-->
-
- 
-
-  <!--Start Activities section -->
+  <!-- start section -->
   <section >
   
-      <div class="col-12">
-        <h1 class="h1 text-center">OUR  ACTIVITIES </h1>
-        <h4 class="h4 text-center">Welcome AL-mumtaz school theese are our gadline of student levels. </h4>
-      </div>
+    <div class="col-12">
+      <h1 class="h1 text-center">OUR  ACTIVITIES </h1>
+      <h4 class="h4 text-center">Welcome AL-mumtaz school theese are our gadline of student levels. </h4>
+    </div>
 </section> <br>
 
- <section class="card-group shadow-lg " style=" color: #978f8f; margin: 30px;" >
-  <div class="card-A col-4 bg- text-light" style="margin: px;">
-  <h1>Thursdat&Friday</h1>
-      <div class="card-Acti">
-        <h5 class="card-title "><b>children’s Preparation </b></h5>
-        <img src="Al-mumtaz/std preparation .jpg" alt="" style="width: 100%;">
-        <h5 class="card-text" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
-          You can find al-mumtaz school preparing and building young student's basic on Thursdays and Fridays to facilitate the student's transfer in the afternoon.</h5>
-      </div>
-  </div>
 
-  <div class="card-A col-4  bg- text-light " style="margin: px;">
-    <h1 class="" >After-noon At Five Days</h1>
-        <div class="card-Acti">
-          <h5 class="card-title" ><b>Primary Education</b></h5>
-          <img src="Al-mumtaz/std primary.jpg" alt="" style="width: 100%;">
-          <h5 class="card-text" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; ">
-            At al-mumtaz school you can find educational services suitable for primary school students to facilitate
-             their transition to secondary school to get an opportunity for learning.</h5>
-        </div>
-    </div>
 
-    <div class="card-A col-4 bg- text-light" style="margin: px;">
-      <h1>Morning At Five Days</h1>
-          <div class="card-Acti">
-            <h5 class="card-title"><b>Secondary Education</b></h5>
-            <img src="Al-mumtaz/std camebac.jpg" alt="" style="width: 100%;">
-            <h5 class="card-text" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
-              We have educational services that will meet the educational needs of modern high school students using more materials helping their studies.</h5>
-          </div>
-      </div>
-    
-
-</div>
- </section><br><br><br>
-<!-- End Activities section-->
-  
-<!-- Start our facilities -->
 <section>
-      <div class="col-12">
-        <h1 class="h1 text-center">
-          OUR FACILITIES</h1>
-        <h6 class="h6 text-center"> Exams and assessments our main goal to improbve student's ability</h6>
-      </div> <br><br>
-  
-  
-
-  <div class="row row-cols-1 row-cols-md-2 g-4 shadow-lg" style=" margin: 20px;">
-    <div class="col " >
-      <div class="card-facil">
-        <img src="Al-mumtaz/std gils.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h5 class="card-title" style="text-transform: capitalize; color: white; font-family: 'Times New Roman', Times, serif; font-size: 50px;">qoraga dhig ee qalinka qaado.</h5>
-          <p class="card-text" style="text-align: left; color: white; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"><b>qalinkaa wax suureeya kugu sima halkaa joogtid sunta fara ku hayntiisa hasii.... </b></p>
-        </div>
+  <div class="container px-4">
+   <div class="row gx-3">
+   
+ 
+      <div class="col">
+ 
+       <div class="p-3 border bg-light"> <img src="mtz logo.jpg" alt=""> <br><br>
+       
+         <div class="card-body">
+          
+           <h2>Thursday & Friday</h2>
+           <h6 class="card-title" style="color: rgb(8, 135, 247);">OPEN 7:00 AM TO 5:00 PM </h6>
+          <a href="OUR  ACTIVITIES.html" class="btn w-100 btn-success">More Infor</a>
+         </div>
+       
+       </div>
+       
       </div>
-    </div>
-    
-      <div class="col shadow-lg " style="box-shadow: 30px;">
-        <div class="card-facil">
-          <img src="Al-mumtaz/std camebac.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title" style="text-transform: capitalize; color: white; font-family: 'Times New Roman', Times, serif; font-size: 50px;"><b>Bar Ama Baro.  <br> .كن عالما أو متعلماً ولا تكن ثالثاً</b></h5>
-            <p class="card-text" style="text-align: left; color: white; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">wax barashadu waa furaha nolashaada waxa ayna kuu kala cadaysaa wadada saxan iyo wadada qaldan.</p>
-          </div>
-        </div>
-      </div>
-      </div>
-</section> <br>
-<!-- End our facilities -->
-
-
-
-
-
-
-<!-- <div  class="carousel slide  carousel-expand-sm" data-bs-ride="carousel">
-
-  <div class="carousel-indicators  bg-dark">
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
-    <button type="button" data-bs-target="#" data-bs-slide-to="1"></button>
-    <button type="button" data-bs-target="#" data-bs-slide-to="2"></button>
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
-    <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
-  </div>
-  
-  <div class="carousel-inner">
-    <div class="carousel-item active ">
-      <img src="images/darad.png" class="d-block" alt="darad" style="width:100%" >
-      <div class="carousel-caption d-none d-md-block">
-        <h1>this is al-mumtaz place</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>
-           Quaerat sapiente laboriosam cum id inventore nesciunt nihil <br>
-            hic repellendus, voluptate, amet atque aut quis porro </p>
-      </div>
-    </div>
-
-    <div class="carousel-item item ">
-      <img src="images/library.png" class="d-block w-100" alt="dabaldeg">
-      <div class="carousel-caption d-none d-md-block">
-        <h1> You Will get good day after End</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>
-          Quaerat sapiente laboriosam cum id inventore nesciunt nihil <br>
-           hic repellendus, voluptate, amet atque aut quis porro </p>
-      </div>
-    </div>
-    <div class="carousel-item item">
-      <img src="images/subjects.jpg" class="d-block w-100" alt=" subject books">
-      <div class="carousel-caption d-none d-md-block">
-        <h1>These are subjedts ypu learn al-mumtaz School</h1>
-        <h1>These are subjedts ypu learn al-mumtaz School</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>
-          Quaerat sapiente laboriosam cum id inventore nesciunt nihil <br>
-           hic repellendus, voluptate, amet atque aut quis porro </p>
-      </div>
-    </div>
-  </div>
-
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div> -->
-
-
-<!-- End carousel section-->
-
-
-
-
-<!-- Start subjec section -->
-<section >
-      <div class="col-12">
-        <h1 class="h1 text-center">VISID PLACES</h1>
-        <h4 class="h4 text-center">Welcome AL-mumtaz school read in the librarry for diffrent subjects. </h4>
-      </div> <br>
-</section> <br>
-
- <div class="sy d-flex " style=" margin: 30px;">
  
  
-
-  <div class="col-6 bg-light text-light shadow-lg  " style="margin: 20px;">
-    <h1 class="text-center" style="color: blueviolet; ">LIBRARY</h1>
-        <div class="card-body">
-        <img src="images/library.png " style="width: 80%; margin-left: 60px; margin-right: 0;" alt="librarry"><br><br>
-        <p> Medicine books.</p>
-        <p>Caltute & ethics books.</p>
-        <p> Bussiness & Technoolagy books.</p>
-        <p>Islamic & history books.</p>
-
-        </div>
-    </div>
-    
-
-    <div class="col-6 bg-light text-light shadow-lg" style="margin: 20px; margin-left: 10px;">
-      <h1  style="color:blue;">SUBJECTS </h1>
-          <div class="card-body">
-            <img src="images/books.jpg" style="width: 100%;" alt="subjects"><br><br><br>
-            <p><ion-icon name="book-outline"></ion-icon>&nbsp;Somaali, Arabic & English&.</p>
-            <p><ion-icon name="book-outline"></ion-icon>&nbsp;islamic, history & Geography. .</p>
-            <p><ion-icon name="earth-outline"></ion-icon>&nbsp;biology, chemistery,physics & math.</p>
-            <p><ion-icon name="laptop-outline"></ion-icon>&nbsp;technology, bussiness & Skills.</p>
-  
-          </div>
+      <div class="col">
+ 
+       <div class="p-3 border bg-light"> <img src="mtz logo.jpg" alt=""> <br><br>
+       
+         <div class="card-body">
+          
+           <h2>Five Days Noon</h2>
+           <h6 class="card-title" style="color: rgb(8, 135, 247);">OPEN 7:00 AM TO 5:00 PM </h6>
+          <a href="OUR  ACTIVITIES.html" class="btn w-100 btn-success">More Infor</a>
+         </div>
+       
+       </div>
+       
       </div>
+ 
+ 
+      <div class="col">
+ 
+       <div class="p-3 border bg-light"> <img src="mtz logo.jpg" alt=""> <br><br>
+       
+         <div class="card-body">
+           
+           <h2>Five Days Morning</h2>
+           <h6 class="card-title" style="color: rgb(8, 135, 247);">OPEN 7:00 AM TO 5:00 PM </h6>
+          <a href="OUR  ACTIVITIES.html" class="btn w-100 btn-success">More Infor</a>
+         </div>
+       
+       </div>
+       
+      </div>
+ 
+ 
+   </div>
  </div>
-</section><br><br><br>
-<!-- End subjec section -->
-
-
-<!--start  footer section -->
-<footer class="footer footer-expand-sm
-">
  
+ </section>
 
 
 
-      <div class="subject col-4" >
-        <h2>MORE INFORMATION</h2>
-        <a href="">Languages</a><br>
-        <a href="">Quotes about us</a><br>
-        <a href="https://maps.app.goo.gl/XnUWFzZp8hGW4kcRA"><ion-icon class="l-icon" name="location-outline"style=" font-size: 50px;"></a></ion-icon>
-        <span>
-          <h5>XaafadaRaadeerkaDegmadaDayniile</h5>
-        </span>
+
+        
       
+
+    <section >
+  
+      <div class="col-12">
+        <h1 class="h1 text-center">OUR FACILITIES </h1>
+        <h4 class="h4 text-center"> Exams and assessments our main goal to improbve student's ability</h4>
+      </div>
+  </section> <br>
+    
+      <section>
+          <div class="container mt-3">
+              <div class="row">
+              <div class="col-3">
+                <img src="Al-mumtaz/std primary.jpg " class="img-thumbnail" alt="Cinque Terre" width="304" height="236"> <br> <br>
+              <h5 class="card-title" style="text-transform: capitalize; color: white; font-family: 'Times New Roman', Times, serif; ">qoraga dhig ee qalinka qaado.</h5>
+             
+            </div>
+             
+                <div class=" col-3">
+                 <img src="Al-mumtaz/FB_IMG_1700030604103.jpg" class="img-fluid" alt="Cinque Terre" width="304" height="236"> <br> <br>
+                  
+                <h5 class="card-title" style="text-transform: capitalize; color: white; font-family: 'Times New Roman', Times, serif; ">.كن عالما أو متعلماً ولا تكن ثالثاً</b></h5>
+                
+                </div>
+
+                
+                <div class=" col-3">
+                  <img src="Al-mumtaz/exam .jpg" class="img-fluid" alt="Cinque Terre" width="304" height="236"> <br> <br> 
+                   
+                 <h5 class="card-title" style="text-transform: capitalize; color: white; font-family: 'Times New Roman', Times, serif; ">qalinkaa wax suureeya kugu sima halkaa joogtid  </b></h5>
+                 
+                 </div>
+                 
+                <div class=" col-3">
+                  <img src="Al-mumtaz/std secondary g .jpg" class="img-fluid" alt="Cinque Terre" width="304" height="236"> <br> <br>
+                   
+                 <h5 class="card-title" style="text-transform: capitalize; color: white; font-family: 'Times New Roman', Times, serif; ">wax barashadu waa furaha nolashaada.</h5>
+                 </div>
+                </div>
+          </div>
+            
+      </section> <br><br> <br>
+
+
+
+      
+      
+      
+      <section>
+        <div class="container">
+          <div class="row row-cols-4">
+            <div class="col-6" style="font-size: 30px; font-family: 'Times New Roman', Times, serif;">
+              <h1>LIBRARY مكيبة</h1>
+              <p><ion-icon name="book-outline"></ion-icon>&nbsp;Islamic & history books.</p>
+              <p><ion-icon name="book-outline"></ion-icon>&nbsp;Bussiness & Technoolagy books.</p>
+              <p><ion-icon name="earth-outline"></ion-icon>&nbsp;Caltute & ethics books.</p>
+              <p><ion-icon name="laptop-outline"></ion-icon>&nbsp;Arts & skills books.</p>
+              <img src="Al-mumtaz/Taaz.jpg" width="100" alt="">
+            </div>
+            
+            
+            <div class="col-6" style="font-size: 30px; font-family: 'Times New Roman', Times, serif;">
+              <h1>SUBJECTS مواد</h1>
+              <p><ion-icon name="book-outline"></ion-icon>&nbsp;Somaali, Arabic & English.</p>
+              <p><ion-icon name="book-outline"></ion-icon>&nbsp;islamic, history & Geography. .</p>
+              <p><ion-icon name="earth-outline"></ion-icon>&nbsp;biology, chemistery, physics&math.</p>
+              <p><ion-icon name="laptop-outline"></ion-icon>&nbsp;technology& bussiness .</p>
+              <img src="images/subjects.png" width="100" alt="">
+            </div>
+            
+          </div>
+        </div>
+  
+      </section> <br>
+
+
+
+     <footer>
+      <div class="container">
+        <div class="row row-cols-4">
+          <div class="subject col-4" >
+            <h2>MORE INFORMATION</h2>
+            <a href="">Languages</a><br>
+            <a href="">Quotes about us</a><br>
+            <a href="https://maps.app.goo.gl/XnUWFzZp8hGW4kcRA"><ion-icon class="l-icon" name="location-outline"style=" font-size: 50px;"></a></ion-icon>
+            <span>
+              <h5>XaafadaRaadeerkaDegmadaDayniile</h5>
+            </span>
+          
+          </div>
+          
+          
+          <div class="library col-4" >
+            <H2>QUICK LINKS</H2>
+            <a href="">Contact</a><br>
+             <a href="">Registration </a><br>
+             <a href="">Dashboard</a><br>
+           </div>
+
+
+
+
+           <div class="bottom-footer col-4" >
+            <ul>
+              <h2>Follow Us On Social Media</h2>
+              <li><a href="#"><ion-icon id="face" name="logo-facebook" ></ion-icon></a></li>
+              <!-- <li><a href="#"><ion-icon id="tk"  name="logo-tiktok"></ion-icon></a></li> -->
+              <li><a href="#"><ion-icon id="whapp"  name="logo-whatsapp"></ion-icon></a></li>
+              <li><a href="#"><ion-icon id="ytube"  name="logo-youtube"></ion-icon>&nbsp;</a></li>
+              <p>&copy; 2023 - 2024 <br> Al-mumtaz School All rights reserved.</p>
+            </ul>
+          </div>
+          
+        </div>
       </div>
 
+     </footer>
 
+     
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-      <div class="library col-2" >
-       <H2>QUICK LINKS</H2>
-       <a href="">Contact</a><br>
-        <a href="">Registration </a><br>
-        <a href="">Dashboard</a><br>
-      </div>
-    
-    
-    <div class="bottom-footer col-4">
-      <ul>
-        <h2>Follow Us On Social Media</h2>
-        <li><a href="#"><ion-icon id="face" name="logo-facebook" ></ion-icon></a></li>
-        <!-- <li><a href="#"><ion-icon id="tk"  name="logo-tiktok"></ion-icon></a></li> -->
-        <li><a href="#"><ion-icon id="whapp"  name="logo-whatsapp"></ion-icon></a></li>
-        <li><a href="#"><ion-icon id="ytube"  name="logo-youtube"></ion-icon>&nbsp;</a></li>
-        <p>&copy;   2023 - 2024 <br> Al-mumtaz School All rights reserved.</p>
-      </ul>
-    </div>
- 
-
-  </footer>
-
-<!--End  footer section-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
+  </body>
 </html>
-    
