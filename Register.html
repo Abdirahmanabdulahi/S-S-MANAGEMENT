@@ -1,325 +1,377 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="mmtaz style.css">
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="myschool.CSS">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <title>REGISTARATION</title>
-</head>
-<body style="background-color:;">
 
-<section>
 
- 
-  
-  <!-- Start  Nav section -->
-<section class="row" id="nav">
-  <!-- Start header section -->
-  <header class="header bg-success">
-    <div class="menu-icon">
-      <a href="https://www.facebook.com/almumtaazschool?mibextid=2JQ9oc"><ion-icon class="f-icon" name="logo-facebook" style=" font-size: 50px;"> </a></ion-icon>
-      <span>
-        <h5>facebook.com/almumtaazschool</h5>
-      </span> &nbsp;&nbsp;
-    </div>
+    <style>
     
 
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
-    <div class="header-right ">
-      
-      <a href="Verify.html">Verify</a>
-      <!-- <input class="form-control border-end-0 border rounded-pill" type="search" placeholder="Search" id="example-search-input">
-        <span class="input-group-append">
-            <button class="btn btn-outline-secondary bg-white border-bottom-0 border rounded-pill ms-n8" type="button">
-              <ion-icon name="search-outline"></ion-icon>
-            </button>
-           
-        </span> -->
+label {
+    display: block;
+    margin-bottom: 8px;
+}
 
-
-        <div class="input-group mb-1 text-center "  >
-          <input type="search" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
-          <button class="btn btn-primary btn-xs" type="button" id="button-addon2"><ion-icon name="search-outline"></ion-icon>Search</button>
-        </div>  
-    </div>
-  </header>
-  <!-- End header section -->
-
-  <!-- Start Navbar  -->
-<nav class="navbar  navbar-expand-sm " >
-    <div class="container-fluid">
-        <div class="Logo d-flex flex-row bd-highlight mb-9 shadow-lg p-2 mb-5  rounded">
-            <img style="width: 20%; height: 20%;  margin-top: 15px; border-radius: 100px;" src="mtz logo.jpg" alt="Logo">&nbsp;&nbsp;&nbsp;
-        <h1 style="text-align: center;">Al-Mumtaz Primary<br>&Secondary School<ion-icon name="school-outline"></ion-icon></h1>
-</div>
-        <div class="Menu d-flex  shadow-lg p-2 mb-5  rounded" id="navbarSupportedContent" >
-            <ul class="menu-bar-nav me-auto mb-3 mb-lg-0">
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="School.html" >Home</a></li>
-                <li  class="nav-item"><a class="nav-link "  href="About Us.html">About</a></li>
-                <li  class="nav-item"><a class="nav-link "  href="contact.html">Contact</a></li>
-                <li  class="nav-item"><a class="nav-link "  href="Register.html">Registration</a></li>
-                <li  class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbarSupportedContent"  href="Dashboard.html" rel="button" data-bs-toggle="dropdown" aria-expanded="false" >Dashboard</a>
-
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li class="dropdown-divider"></li>
-                    <li class="dropdown-item"><a href="Dashboard.html"><ion-icon name="grid-outline"></ion-icon>&nbsp;Dashboard</a></li>
-                    <li class="dropdown-item"><a href="#dash"><ion-icon name="man-outline"></ion-icon>&nbsp;Teachers</a></li>
-                    <li class="dropdown-item"><a href="Students.html"><ion-icon name="people-outline"></ion-icon>&nbsp;Students</a></li>
-                    <li class="dropdown-item"><a href=""><ion-icon name="pencil-outline"></ion-icon>&nbsp;Exam</a></li>
-                    <li class="dropdown-item"><a href=""><ion-icon name="checkmark-done-outline"></ion-icon>&nbsp;Attandence</a></li>
-                    <li class="dropdown-item"><a href=""><ion-icon name="stats-chart-outline"></ion-icon>&nbsp;Activities</a></li>
-                    <li class="dropdown-item"><a href=""><ion-icon name="reader-outline"></ion-icon>&nbsp;Academic</a></li>
-                    <li class="dropdown-item"><a href=""><ion-icon name="mail-outline"></ion-icon>&nbsp;SMS</a></li>
-                    <li class="dropdown-item"><a href="finance.html"><ion-icon name="pulse-outline"></ion-icon>&nbsp;Finance</a></li>
-                    <li class="dropdown-item"><a href=""><ion-icon name="calendar-outline"></ion-icon>&nbsp;Events</a></li>
-                    <li class="dropdown-item"><a href=""><ion-icon name="people-circle-outline"></ion-icon>&nbsp;Meeting</a></li>
-                    <li class="dropdown-item"><a href=""><ion-icon name="settings-outline"></ion-icon>&nbsp;Setting</a></li>
-                </ul>
-            </li>
-            </ul>
-            
-
-            <form class="d-flex text-info ">
-              <button class="btn  btn-lg  btn-success " type=" submit"><a href="login.html">Login </button></a></button>&nbsp;&nbsp;
-              <button class="btn  btn-lg   btn-primary " type="submit" ><a href="log out.html">SingUp</a></button>
-        </form>
-        </div>
-        
-    </div>
-</nav> 
- <!-- End navbar -->
-<h1 class="h1 text-light text-center margin-5rem" style=" margin-top: 100px;">REGISTARATION</h1>
-</section> <br>
- <!-- End navbar -->
+input , #city , #Capital[type="text" ],
+select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
 
 
- <!--start Registration section -->
+
+select {
+    cursor: pointer;
+}
+
+input[readonly] {
+    background-color: #fdfbfb; 
+   
+}
+
+#flag{  padding: 80px;
+
+}
+#flag{  padding: 80px;
+
+}
+
+input[type="text"]:invalid {
+    border: 1px solid red;
+}
+
+
+
+.gradeA {
+    color: green;
+}
+
+.gradeB {
+    color: blue;
+}
+
+.gradeC {
+    color: yellow;
+}
+
+.gradeD {
+    color: orange;
+}
+
+.gradeF {
+    color: red;
+}
+
+
+
+
+</style>
+    <title>Contact</title>
+</head>
+<body style="background-color: rgb(245, 248, 248);">
   
- <div class="container-fluid  bg-info w-100 d-center  was-validated text-center" style="margin: 10px;">
-  <form action="/action_page.php" class="row g-3 needs-validation ">
-          <h1 class="h1 text-center">Al-mumtaz Registration-Form</h1>
-            <img class="rounded col-mb-4" border-radius="100%"  width="304" height="236"  src="mtz logo.jpg" alt="logo"><span><B>AL-MUMTAZ</B></span><br>
-          <div class="position-relative col-md-4 size-80">
-          <label for="validationTooltip02" aria-hidden="false" class="form-label">STD FullName</label>
-          <input type="text" class="form-control" id="validationTooltip02" size="50" placeholder="STD FullName" required>
-          <div class="valid-feedback">Valid.</div>
-          <div class="invalid-feedback">Please fill out this field.</div>
-      </div>
+    <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-success sticky-top"> 
+        <div class="container-fluid">
+          <a class="navbar-brand" style="color: white;" href="#"> <img src="mtz logo.jpg" class="" alt="" width="50"> AL-MUMTAAZ <span style="font-size: 8px; color: blue;">Primary&Secondary School<ion-icon name="school-outline"></ion-icon></span>&nbsp;</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>&nbsp;&nbsp;
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul id="mnu" class="navbar-nav me-auto mb-2 mb-lg-0 sticky-top">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Register</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Verify.html">Verify</a></li>
 
-      <div class="position-relative col-md-4">
-          <label for="validationTooltip02" class="form-label">STD ID</label>
-          <input type="text" class="form-control" id="validationTooltip02" placeholder="STD ID" required>
-          <div class="valid-feedback">Valid.</div>
-        <div class="invalid-feedback">Please fill out this field.</div>
-      </div>
-
-      <div class="position-relative col-md-4">
-          <label for="validationTooltip02" class="form-label">STD CLASS</label>
-          <input type="text" class="form-control" id="validationTooltip02" placeholder="STD CLASS" required>
-          <div class="valid-feedback">Valid.</div>
-        <div class="invalid-feedback">Please fill out this field.</div>
-      </div>
-
-      <div class="position-relative col-md-4">
-          <label for="validationTooltip02" class="form-label">STD Birth Date</label>
-          <input type="date" class="form-control" id="validationTooltip02" placeholder="DAY" required>
-
-          <div class="valid-feedback">Valid.</div>
-          <div class="invalid-feedback">Please fill out this field.</div>
-      </div>
-
-      <div class="position-relative col-md-4">
-          <label for="validationTooltip02" class="form-label">STD GENDER</label>
-          <Select class="form-select">
-            <Option selected>STD GENDER</Option required>
-              <Option value="1" >Male</Option>
-              <Option value="2" >Female</Option>
-              
-          </Select>
-          <div class="valid-feedback">Valid.</div>
-          <div class="invalid-feedback">Please fill out this field.</div>
-
-
-          <input type="radio"  class="radio-button" name="r">
-            <label style="margin-right: 35px; font-size: 18px; padding: 5px;">male</label>
-            <input type="radio"  class="radio-button" name="r">
-            <label>female</label>
-      </div>
-      
-      <div class="position-relative col-md-4">
-          <label for="validationTooltip02" class="form-label">STD Email-Address</label>
-          <input type="email" class="form-control" id="validationTooltip02" placeholder="Exmyname@example.com" required>
-
-          <div class="valid-feedback">Valid.</div>
-          <div class="invalid-feedback">Please fill out this field.</div>
-      </div>
-
-
-      <div class="position-relative col-md-4">
-          <label for="validationTooltip02" class="form-label">STD District</label>
-          <Select class="form-select">
-            <Option selected>STD District</Option required>
-              <Option value="1" >Abdiaziz</Option>
-              <Option value="2" > Bondere </Option>
-              <Option value="3" >Daynile </Option>
-              <Option value="4" >Dharkenley</Option>
-              <Option value="5" > Hodan</Option>
-              <Option value="6" >H/Wadaag</Option>
-              <Option value="7" >H/Jijab</Option>
-              <Option value="8" >H/Weyne</Option>
-              <Option value="9" > Huriwaa</Option>
-              <Option value="10" > Karaan</Option>
-              <Option value="11" > Kahda</Option>
-              <Option value="12" >Shangani</Option>
-              <Option value="13" >Shibis</Option>
-              <Option value="14" >Waberi</Option>
-              <Option value="15" >Wadajir </Option>
-              <Option value="16" >Wardigley</Option>
-              <Option value="17" >Yaqshid</Option>
-            </Select>
-            <div class="valid-feedback">Valid.</div>
-            <div class="invalid-feedback">Please fill out this field.</div>
-        </div>
-
-
-      <div class="position-relative col-md-4">
-          <label for="validationTooltip02" class="form-label">STD Parent Phone Number</label>
-          <input type="tel" class="form-control" id="validationTooltip02" placeholder="+252" required>
-
-          <div class="valid-feedback">Valid.</div>
-          <div class="invalid-feedback">Please fill out this field.</div>
-      </div>
-
-      <div class="position-relative col-md-4">
-          <label for="validationTooltip02" class="form-label">STD Phone Number</label>
-          <input type="tel" class="form-control" id="validationTooltip02" placeholder="+252" required>
-
-          <div class="valid-feedback">Valid.</div>
-          <div class="invalid-feedback">Please fill out this field.</div> <div class="valid-tooltip">
-              Looks good!
-            </div>
-      </div>
-
-      <div class="position-relative col-md-4">
-          <label for="validationTooltip02" class="form-label">STD Responsible No</label>
-          <input type="tel" class="form-control" id="validationTooltip02" placeholder="+252" required >
-
-          <div class="valid-feedback">Valid.</div>
-          <div class="invalid-feedback">Please fill out this field.</div>
-      </div>
-
-      <div class="position-relative col-md-4">
-          <label for="validationTooltip02" class="form-label">STD Responsible No</label>
-          <input type="tel" class="form-control" id="validationTooltip02" placeholder="+252" required>
-
-          <div class="valid-feedback">Valid.</div>
-          <div class="invalid-feedback">Please fill out this field.</div>
-      </div>
-      <!-- <div class="col-md-4 position-relative">
-        <label for="validationTooltip02" class="form-label">Last name</label>
-        <input type="text" class="form-control" id="validationTooltip02" value="Otto" required>
-        <div class="valid-tooltip">
-          Looks good!
-        </div>
-      </div>
-      <div class="col-md-4 position-relative">
-        <label for="validationTooltipUsername" class="form-label">Username</label>
-        <div class="input-group has-validation">
-          <span class="input-group-text" id="validationTooltipUsernamePrepend">@</span>
-          <input type="text" class="form-control" id="validationTooltipUsername" aria-describedby="validationTooltipUsernamePrepend" required>
-          <div class="invalid-tooltip">
-            Please choose a unique and valid username.
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="Dashboard.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dashboard
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="Dashboard.html">DASHBOARD</a></li>
+                  <li><a class="dropdown-item" href="Teacher.html"><ion-icon name="man-outline"></ion-icon>TEACHEARS manage ▼</a></li>
+                  <li><a class="dropdown-item" href="Students.html"><ion-icon name="people-outline"></ion-icon>&nbsp;STUDENTS manage ▼</a></li>
+                  <li><a class="dropdown-item" href="Classes.html"><ion-icon name="home"></ion-icon>&nbsp;CLASS manage ▼</a></li>
+                  <li><a class="dropdown-item" href="Exam.html"><ion-icon name="pencil-outline"></ion-icon>&nbsp;EXAM manage ▼</a></li>
+                  <li><a class="dropdown-item" href="Attendence.html"><ion-icon name="checkmark-done-outline"></ion-icon>ATTENDANCE manage▼</a></li>
+                  <li><a class="dropdown-item" href=""><ion-icon name="stats-chart-outline"></ion-icon>&nbsp;ACTIVITIES manage</a></li>
+                  <li><a class="dropdown-item" href=""><ion-icon name="reader-outline"></ion-icon>&nbsp;ACADEMIC manage ▼</a></li>
+                  <li><a class="dropdown-item" href=""><ion-icon name="accessibility"></ion-icon>&nbsp; EMPLOYEE manage ▼</a></li>
+                  <li><a class="dropdown-item" href="finance.html"><ion-icon name="logo-usd"></ion-icon>&nbsp;FINANCE manage ▼</a></li>
+                  <li><a class="dropdown-item" href=""><ion-icon name="calendar-outline"></ion-icon>&nbsp;EVENTS manage </a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href=""><ion-icon name="people-circle-outline"></ion-icon>&nbsp;Meeting </a></li>
+                  <li><a class="dropdown-item" href=""><ion-icon name="warning"></ion-icon>&nbsp;REPORTS</a></li>
+                  <li><a class="dropdown-item" href=""><ion-icon name="person"></ion-icon>&nbsp;USERS</a></li>
+                  <li><a class="dropdown-item" href=""><ion-icon name="receipt"></ion-icon>&nbsp;COMPLAIN</a></li>
+                  <li><a class="dropdown-item" href=""><ion-icon name="mail-outline"></ion-icon>&nbsp; SMS </a></li>
+                  <li><a class="dropdown-item" href=""><ion-icon name="settings-outline"></ion-icon>&nbsp;SETTING</a></li>
+                </ul>
+              </li> &nbsp; &nbsp;
+             
+              <button class="btn btn-sm btn-success btn-outline-dark" type="submit"><a style="color: aliceblue; text-decoration: none;" href="login.html">Log in </a></button>&nbsp;
+              <button class="btn btn-sm btn-primary btn-outline-dark" type="submit">Sing up</button>
+            </ul> &nbsp;
+            <form class="d-flex">
+              <!-- <input class="form-control me-2" type="search" placeholder="Search "  aria-label="Search" >
+              <button class="btn btn-sm  btn-light btn-outline-dark" type="submit">Search<ion-icon name="pencil-outline"></ion-icon>&nbsp;</button>
+            -->
+            <input type="search" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
+            <button class="btn btn-light btn-sm  btn-outline-dark"  type="submit" id="button-addon2"><ion-icon name="search-outline"></ion-icon>Search</button>
+         
+            </form>
           </div>
         </div>
-      </div>
-      <div class="col-md-6 position-relative">
-        <label for="validationTooltip03" class="form-label">City</label>
-        <input type="text" class="form-control" id="validationTooltip03" required>
-        <div class="invalid-tooltip">
-          Please provide a valid city.
-        </div>
-      </div>
-      <div class="col-md-3 position-relative">
-        <label for="validationTooltip04" class="form-label">State</label>
-        <select class="form-select" id="validationTooltip04" required>
-          <option selected disabled value="">Choose...</option>
-          <option>...</option>
-        </select>
-        <div class="invalid-tooltip">
-          Please select a valid state.
-        </div>
-      </div>
-      <div class="col-md-3 position-relative">
-        <label for="validationTooltip05" class="form-label">Zip</label>
-        <input type="text" class="form-control" id="validationTooltip05" required>
-        <div class="invalid-tooltip">
-          Please provide a valid zip.
-        </div>
-      </div>
-      <div class="col-12">
-        <button class="btn btn-primary" type="submit">Submit form</button>
-      </div> -->
-      <div class="col-12">
+      </nav> <br> 
+
+      <form action="" >
+          <h1>Frorm Registration of almumtaz</h1>
          
-        <button class="btn btn-primary w-40" value="submit" type="submit">Submit </button>
-        <button class="btn btn-danger w-40" value="reset" type="reset">Reset </button>
-        </div>
-       
-    </form>
-  </div>   
-   <!--End Registration section -->
-
-<section>
-<!--start  footer section -->
-<footer class="footer footer-expand-sm
-">
- 
-
-
-
-      <div class="subject col-4" >
-        <h2>MORE INFORMATION</h2>
-        <a href="">Languages</a><br>
-        <a href="">Quotes about us</a><br>
-        <a href="https://maps.app.goo.gl/XnUWFzZp8hGW4kcRA"><ion-icon class="l-icon" name="location-outline"style=" font-size: 50px;"></a></ion-icon>
-        <span>
-          <h5>XaafadaRaadeerkaDegmadaDayniile</h5>
-        </span>
+              <!-- <label for="nameInput">Enter your name:</label> -->
+             <input type="text" id="nameInput" placeholder="Enter your name:" required> <br> 
       
-      </div>
+             <!-- grade code -->
+             
+             <!-- <input type="text" id="marks" placeholder="Enter your marks:" oninput="calculateGrade()"> <br>
+             <label>Your Grade is: </label>
+             <input type="text" id="grade" readonly> <br> -->
+      
+             <!-- age code -->
+            
+                  <input type="text" id="bdate" placeholder="Enter your Birth Date:" oninput="getAge()"> <br>
+                  <label>Your Age is: </label>
+                  <input type="text" id="age" readonly> <br>
+                 
+             <!-- time code -->
+             <select id="university" name="university" onchange="universityselec()">
+              <option value="">Select Time Entering</option>
+                 <option value="Uniso">Morninig</option>
+                 <option value="SIU">Afternoon</option>
+                 <option value="JUS">WeekEnd</option>
+                </select><br>
+                 <!-- Add more options as needed -->
+             <!-- classes code -->
+             <select id="university" name="university" onchange="universityselec()">
+              <option value="">Select Class</option>
+                 <option value="Uniso">Form Five</option>
+                 <option value="SIU">Form Four</option>
+                 <option value="JUS">Form Three</option>
+                 <option value="Uniso">Form Two</option>
+                 <option value="SIU">Form One</option>
+                 <option value="JUS">Class 8</option>
+                 <option value="Uniso">Class 7</option>
+                 <option value="SIU">Class 6</option>
+                 <option value="JUS">Class 5</option>
+                 <option value="Uniso">Class 4</option>
+                 <option value="SIU">Class 3</option>
+                 <option value="JUS">Class 2</option>
+                 <option value="JUS">Class 1</option>
+                 <option value="JUS">Preparation Class</option>
+                </select><br>
+                 <!-- Add more options as needed -->
+
+                 <!-- time code -->
+             <select id="university" name="university" onchange="universityselec()">
+              <option value="">Select Batch</option>
+                 <option value="Uniso">Batch One</option>
+                 <option value="SIU">Batch Two</option>
+                </select><br>
+                 <!-- Add more options as needed -->
+
+             <!-- academic code -->
+             <select id="university" name="university" onchange="universityselec()">
+              <option value="">Select Academic</option>
+                 <option value="Uniso">2010-2011</option>
+                 <option value="SIU">2011-2012</option>
+                 <option value="JUS">2012-2013</option>
+                 <option value="Uniso">2013-2014</option>
+                 <option value="SIU">2014-2015</option>
+                 <option value="JUS">2015-2016</option>
+                 <option value="Uniso">2016-2017</option>
+                 <option value="SIU">2017-2018</option>
+                 <option value="JUS">2018-2019</option>
+                 <option value="Uniso">2019-2020</option>
+                 <option value="SIU">2020-2021</option>
+                 <option value="JUS">2021-2022</option>
+                 <option value="JUS">2022-2023</option>
+                 <option value="JUS">2023-2024</option>
+                </select><br>
+                 <!-- Add more options as needed -->
+             
+           
+          <select id="district" name="district" onchange="populateDistricts()">
+              <option value="">Select your district</option>
+              <option value="boondheere">Boondheere</option>
+              <option value="cabdicaziiz">Cabdicaziiz</option>
+              <option value="dharkenley">Dharkenley</option>
+              <option value="dayniile">dayniile</option>
+              <option value=" hodan"> hodan</option>
+              <option value=" howlwadaag"> howlwadaag</option>
+              <option value="heliwaa">heliwaa</option>
+              <option value="kaaraan">kaaraan</option>
+              <option value="kaxda">kaxda</option>
+              <option value="shibis">shibis</option>
+              <option value=" wadajir">wadajira</option>
+              <option value="shangaani">shangaani</option>
+              <option value="waaberi"> waaberi</option>
+              <option value="wardhiigley"> wardhiigley</option>
+              <option value="xamarweyne">  xamarweyne</option>
+              <option value="xamarjajab"> xamarjajab</option>
+              <!-- <option value="dharkenley">Dharkenley</option> -->
+      
+             
+      
+             
+          </select><br>
+           
+          <label for="city">Your City is:</label>
+          <input id="city" name="city" readonly> <br><br>
+      
+      
+              
+              <select id="Stage" name="Stage" onchange="StageFlag()">
+                  <option value="">Select Your Stage</option>
+                  <option value="Banaadir">Banaadir</option>
+                  <option value="Puntland">Puntland</option>
+                  <option value="Jubaland">Jubaland</option>
+                  <option value="Soomaliland">Soomaliland</option>
+                  <option value="Hirshabeele">Hirshabeele</option>
+                  <option value="Galmudug">Galmudug</option>
+                  <option value="KonfurGalbeed">KonfurGalbeed</option>
+                  <option value="Khaatumo">Khaatumo</option>
+              </select><br>
+          
+             <label for="Capital">Your Capital City Is</label>
+              <input id="Capital">
+             
+      </form>
+          <script >
+              function calculateGrade() {
+          var marks = document.getElementById('marks').value;
+          var grade = '';
+      
+          if (marks > 100) {
+              grade = 'Value must be less than or equal to 100';
+          } else if (marks >= 90 && marks <= 100) {
+              grade = 'A';
+          } else if (marks >= 80 && marks <= 89) {
+              grade = 'B';
+          } else if (marks >= 70 && marks <= 79) {
+              grade = 'C';
+          } else if (marks >= 60 && marks <= 69) {
+              grade = 'D';
+          } else {
+              grade = 'F';
+          }
+      
+          document.getElementById('grade').value = grade;
+      
+          // Apply different colors based on the grade
+          document.getElementById('grade').className = 'grade' + grade;
+      }
+      
+      
+      function getAge() {
+          bdate = document.getElementById('bdate').value;
+      
+          age = 2023 -  bdate;
+      
+          document.getElementById('age').value = age;
+      }
+      
+      
+      const districtCity = {
+          boondheere: 'banaadir',
+              cabdicaziiz: 'banaadir',
+              dharkenley: 'banaadir',
+              dayniile: 'banaadir',
+              hodan: 'banaadir',
+              howlwadaag: 'banaadir',
+              heliwaa: 'banaadir',
+              kaaraan: 'banaadir',
+              kaxda: 'banaadir',
+              shibis: 'banaadir',
+              wadajira:  'banaadir',
+              shangaani: 'banaadir',
+              waaberi: 'banaadir',
+              wardhiigley: 'banaadir',
+              xamarweyne: 'banaadir',
+              xamarjajab: 'banaadir',
+              // hodan: 'banaadir',
+             
+      };
+      
+      function populateDistricts() {
+          const districtSelect = document.getElementById('district');
+          const cityInput = document.getElementById('city');
+          const selectedDistrict = districtSelect.options[districtSelect.selectedIndex].value;
+      
+          // Get the corresponding city for the selected district
+          const city = districtCity[selectedDistrict];
+      
+          // Set the city in the input field
+          cityInput.value = city;
+      }
+      
+      
+      const FlagST = {
+          Banaadir: 'Mogadishu',
+          Jubaland: 'Kismaayo',
+          Soomaliland: 'Hargaysa',
+          Hirshabeele: 'Jowhar',
+          Galmudug: 'Dhuusamareeb',
+          KonfurGalbeed: 'Baydhabo',
+          Puntland: 'Garoowe',
+          Khaatumo: 'Laascaanood'
+      };
+      
+      function StageFlag() {
+          const Stageselect = document.getElementById('Stage');
+          const capitalInput = document.getElementById('Capital');
+          const selectedStage = Stageselect.options[Stageselect.selectedIndex].value;
+      
+         
+          
+          
+          const Capital = FlagST[selectedStage];
+          
+          capitalInput.value = Capital;
+          
+      }
+          </script>
+      <!-- End Contact section -->
 
 
+  
 
-      <div class="library col-2" >
-       <H2>QUICK LINKS</H2>
-       <a href="">Contact</a><br>
-        <a href="">Registration </a><br>
-        <a href="">Dashboard</a><br>
-      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
     
-    
-    <div class="bottom-footer col-4">
-      <ul>
-        <h2>Follow Us On Social Media</h2>
-        <li><a href="#"><ion-icon id="face" name="logo-facebook" ></ion-icon></a></li>
-        <!-- <li><a href="#"><ion-icon id="tk"  name="logo-tiktok"></ion-icon></a></li> -->
-        <li><a href="#"><ion-icon id="whapp"  name="logo-whatsapp"></ion-icon></a></li>
-        <li><a href="#"><ion-icon id="ytube"  name="logo-youtube"></ion-icon>&nbsp;</a></li>
-        <p>&copy;   2023 - 2024 <br> Al-mumtaz School All rights reserved.</p>
-      </ul>
-    </div>
- 
-
-  </footer>
-
-<!--End  footer section-->
-</section>
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
+  </body>
 </html>
-    
