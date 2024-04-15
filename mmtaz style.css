@@ -274,3 +274,47 @@ li{list-style: none;}
 
 
 /* form section */
+
+
+/* footer */
+
+footer {
+  background-color: rgb(145, 107, 227);
+  padding: 20px 0; /* Adjust padding as needed */
+}
+
+.container {
+  max-width: 1200px; /* Set maximum width for the container */
+  margin: 0 auto; /* Center the container */
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.subject,
+.bottom-footer {
+  flex: 0 0 50%; /* Two columns, each taking 50% of the width */
+}
+
+h2 {
+  color: #333; /* Set the color for heading text */
+}
+
+ul {
+  list-style: none; /* Remove default list styles */
+  padding: 0;
+  display: flex; /* Display list items in a row */
+}
+
+ul li {
+  margin-right: 15px; /* Adjust spacing between social media icons */
+}
+
+ion-icon {
+  font-size: 20px; /* Adjust the icon size as needed */
+  color: #333; /* Set the color for icon */
+}
+
+/* footer */
