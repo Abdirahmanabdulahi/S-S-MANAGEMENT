@@ -22,17 +22,13 @@
 .logo {
     display: flex;
     align-items: center;
-    background: #9bd3b8;
-    margin-top: 40px;
-    margin-left: 20px;
     
     
 }
 .logo img{
-    background: #9bd3b8;
     width: 40px;
     margin-right: 5px;
-    height: 30px;
+    height: 40px;
    
     
 }
@@ -100,13 +96,10 @@
 }
 
 /* start sidebar */
-#menu-btn{
-    display: none;
-}
 
 .sidebar{
    
-    top: 20px;
+    top: 60px;
     width: 200px;
     height: calc(100% - 40px);
     background: #9bd3b8;
@@ -211,7 +204,7 @@
 
 
 /* start charts */
-/* .charts{
+.charts{
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid: 20px;
@@ -233,7 +226,7 @@
     text-align: center;
     
     
-} */
+}
 
 
 /* START USER REGISTER */
@@ -431,21 +424,10 @@ footer {
 
 
 /* responsive Starts  */
-/* Media Query */
-@media (max-width: 768px) {
-    .sidebar {
-        width: 0;
-        padding-top: 50px;
+@media (max-width:1115px){
+    .sidebar{
+        width: 60px;
     }
-
-    .sidebar ul {
-        display: none;
-    }
-
-    .show-btn {
-        display: block;
-    }
-
    
     .mainbar{
         left: 60px;
