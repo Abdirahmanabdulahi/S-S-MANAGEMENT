@@ -69,6 +69,25 @@ new Chart(ctz, {
 
 
 // Start Here Search java
+function search(){
+  let filter = document.getById('find').value.toUpperCase();
+  let item = document.querySelectorAll('sidebar');
+  let I = document.getElementsByTagName('h4');
+  for(var i =0; i<=I.length; i ++){
+  let a=item[i].getElementsByTagName('h3')[0];
+  let value = a.innerHTML || a.textContent;
+  if (value.toUpperCase().indexOf(filter) > -1) {
+  item[i].style. display = "";
+  }
+  else {
+  item [i].style.display= "none";
+  }
+  
+  }
+  }
+
+
+
 // let availablekeywords= [
 //   'About us',
 //   'Motivation ',
