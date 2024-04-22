@@ -22,13 +22,17 @@
 .logo {
     display: flex;
     align-items: center;
+    background: #9bd3b8;
+    margin-top: 40px;
+    margin-left: 20px;
     
     
 }
 .logo img{
+    background: #9bd3b8;
     width: 40px;
     margin-right: 5px;
-    height: 40px;
+    height: 30px;
    
     
 }
@@ -96,10 +100,13 @@
 }
 
 /* start sidebar */
+#menu-btn{
+    display: none;
+}
 
 .sidebar{
    
-    top: 60px;
+    top: 20px;
     width: 200px;
     height: calc(100% - 40px);
     background: #9bd3b8;
@@ -424,9 +431,10 @@ footer {
 
 
 /* responsive Starts  */
-@media (max-width:1115px){
+@media (max-width:769px){
     .sidebar{
         width: 60px;
+        
     }
    
     .mainbar{
