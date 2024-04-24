@@ -3,78 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="myschool.CSS">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>About Us</title>
+    <title>AboutUs Page </title>
 </head>
-<body style="background-color: rgb(121, 172, 172);">
-  <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-success sticky-top"> 
-      <div class="container-fluid">
-        <a class="navbar-brand" style="color: white;" href="#"> <img src="mtz logo.jpg" class="" alt="" width="50"> AL-MUMTAAZ <span style="font-size: 8px; color: blue;">Primary&Secondary School<ion-icon name="school-outline"></ion-icon></span>&nbsp;</a>
-        <img src="theme.png" style="width: 1%;" alt="">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>&nbsp;&nbsp;
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul id="mnu" class="navbar-nav me-auto mb-2 mb-lg-0 sticky-top">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="About Us.html">About</a></li>
+<body style="background-color:var(--primary-color);">
+    <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-success sticky-top"> 
+        <div class="container-fluid">
+          <a class="navbar-brand" style="color: var(--secondary-color);" href="#"> <img src="mtz logo.jpg" class="" alt="" width="50"> AL-MUMTAAZ <span style="font-size: 8px; color: blue;">Primary&Secondary School<ion-icon name="school-outline"></ion-icon></span>&nbsp;</a>
+          <img id="mon" src="theme.png" style="width: 1%;" alt="">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>&nbsp;&nbsp;
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+            <ul id="mnu" class="navbar-nav me-auto mb-2 mb-lg-0 sticky-top" >
               <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a></li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="Forms.html">Register</a></li>
-                      <li class="nav-item">
-                          <a class="nav-link" href="Verify.html">Verify</a></li>
+                <a class="nav-link active" style="color:var(--secondary-color)"  aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color:var(--secondary-color)"  href="About Us.html">About</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" style="color:var(--secondary-color)"  href="contact.html">Contact</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color:var(--secondary-color)"  href="Register.html">Register</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" style="color:var(--secondary-color)"  href="Verify.html">Verify</a></li>
 
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="Dashboard.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dashboard
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="">DASHBOARD</a></li>
-                <li><a class="dropdown-item" href="Teacher.html"><ion-icon name="man-outline"></ion-icon>TEACHEARS MANAGE</a></li>
-                <li><a class="dropdown-item" href="Students.html"><ion-icon name="people-outline"></ion-icon>&nbsp;STUDENTS MANAGE</a></li>
-                <li><a class="dropdown-item" href="Classes.html"><ion-icon name="home"></ion-icon>&nbsp;CLASS MANAGE </a></li>
-                <li><a class="dropdown-item" href="Exam.html"><ion-icon name="pencil-outline"></ion-icon>&nbsp;EXAM MANAGE  </a></li>
-                <li><a class="dropdown-item" href="Attendence.html"><ion-icon name="checkmark-done-outline"></ion-icon>ATTENDANCE MANAGE</a></li>
-                <li><a class="dropdown-item" href=""><ion-icon name="stats-chart-outline"></ion-icon>&nbsp;ACTIVITIES MANAGE</a></li>
-                <li><a class="dropdown-item" href=""><ion-icon name="reader-outline"></ion-icon>&nbsp;ACADEMIC MANAGE</a></li>
-                <li><a class="dropdown-item" href=""><ion-icon name="accessibility"></ion-icon>&nbsp; EMPLOYEE MANAGE</a></li>
-                <li><a class="dropdown-item" href="finance.html"><ion-icon name="logo-usd"></ion-icon>&nbsp;FINANCE MANAGE</a></li>
-                <li><a class="dropdown-item" href=""><ion-icon name="calendar-outline"></ion-icon>&nbsp;EVENTS MANAGE </a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-                <li><a class="dropdown-item" href=""><ion-icon name="people-circle-outline"></ion-icon>&nbsp;Meeting </a></li>
-                <li><a class="dropdown-item" href=""><ion-icon name="warning"></ion-icon>&nbsp;REPORTS</a></li>
-                <li><a class="dropdown-item" href=""><ion-icon name="person"></ion-icon>&nbsp;USERS MANAGE</a></li>
-                <li><a class="dropdown-item" href=""><ion-icon name="receipt"></ion-icon>&nbsp;COMPLAIN</a></li>
-                <li><a class="dropdown-item" href=""><ion-icon name="mail-outline"></ion-icon>&nbsp; SMS </a></li>
-                <li><a class="dropdown-item" href=""><ion-icon name="settings-outline"></ion-icon>&nbsp;SETTING</a></li>
-              </ul>
-            </li> &nbsp; &nbsp;
-           
-            <button class="btn btn-sm btn-success btn-outline-dark" type="submit"><a style="color: aliceblue; text-decoration: none;" href="login.html">LogIn </a></button>&nbsp;
-            <button class="btn btn-sm btn-primary btn-outline-dark" type="submit"><a style="color: rgb(10, 10, 10); text-decoration: none;" href="Sing Up.html">SingUp</a></button>
-          </ul> &nbsp;
-          <form class="d-flex">
-            <!-- <input class="form-control me-2" type="search" placeholder="Search "  aria-label="Search" >
-            <button class="btn btn-sm  btn-light btn-outline-dark" type="submit">Search<ion-icon name="pencil-outline"></ion-icon>&nbsp;</button>
-          -->
-          <input type="search" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
-          <button class="btn btn-light btn-sm  btn-outline-dark"  type="submit" id="button-addon2"><ion-icon name="search-outline"></ion-icon>Search</button>
-       
-          </form>
+              <li class="nav-item dropdown">
+                <!-- <a class="nav-link dropdown-toggle" style="color:var(--secondary-color)"  href="DASHBOARD RES.HTML" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dashboard
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="">DASHBOARD</a></li>
+                  <li><a class="dropdown-item" href="Teacher.html"><ion-icon name="man-outline"></ion-icon>TEACHEARS MANAGE</a></li>
+                  <li><a class="dropdown-item" href="Students.html"><ion-icon name="people-outline"></ion-icon>&nbsp;STUDENTS MANAGE</a></li>
+                  <li><a class="dropdown-item" href="Classes.html"><ion-icon name="home"></ion-icon>&nbsp;CLASS MANAGE </a></li>
+                  <li><a class="dropdown-item" href="Exam.html"><ion-icon name="pencil-outline"></ion-icon>&nbsp;EXAM MANAGE  </a></li>
+                  <li><a class="dropdown-item" href="Attendence.html"><ion-icon name="checkmark-done-outline"></ion-icon>ATTENDANCE MANAGE</a></li>
+                  <li><a class="dropdown-item" href=""><ion-icon name="stats-chart-outline"></ion-icon>&nbsp;ACTIVITIES MANAGE</a></li>
+                  <li><a class="dropdown-item" href=""><ion-icon name="reader-outline"></ion-icon>&nbsp;ACADEMIC MANAGE</a></li>
+                  <li><a class="dropdown-item" href=""><ion-icon name="accessibility"></ion-icon>&nbsp; EMPLOYEE MANAGE</a></li>
+                  <li><a class="dropdown-item" href="finance.html"><ion-icon name="logo-usd"></ion-icon>&nbsp;FINANCE MANAGE</a></li>
+                  <li><a class="dropdown-item" href=""><ion-icon name="calendar-outline"></ion-icon>&nbsp;EVENTS MANAGE </a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href=""><ion-icon name="people-circle-outline"></ion-icon>&nbsp;Meeting </a></li>
+                  <li><a class="dropdown-item" href=""><ion-icon name="warning"></ion-icon>&nbsp;REPORTS</a></li>
+                  <li><a class="dropdown-item" href=""><ion-icon name="person"></ion-icon>&nbsp;USERS MANAGE</a></li>
+                  <li><a class="dropdown-item" href=""><ion-icon name="receipt"></ion-icon>&nbsp;COMPLAIN</a></li>
+                  <li><a class="dropdown-item" href=""><ion-icon name="mail-outline"></ion-icon>&nbsp; SMS </a></li>
+                  <li><a class="dropdown-item" href=""><ion-icon name="settings-outline"></ion-icon>&nbsp;SETTING</a></li>
+                </ul>
+              </li> &nbsp; &nbsp; -->
+             
+              <button class="btn btn-sm btn-info btn-outline-primary" type="submit"><a style="color:var(--secondary-color);width: 70%; text-decoration: none;" href="login.html">LogIn </a></button>&nbsp;
+              <button class="btn btn-sm btn-primary btn-outline-secondary" type="submit"><a style="color:var(--secondary-color );width: 70%; text-decoration: none;" href="Sing Up.html">SingUp</a></button>
+            </ul> &nbsp;
+            <form class="d-flex">
+              <!-- <input class="form-control me-2" type="search" placeholder="Search "  aria-label="Search" >
+              <button class="btn btn-sm  btn-light btn-outline-dark" type="submit">Search<ion-icon name="pencil-outline"></ion-icon>&nbsp;</button>
+            -->
+            <input type="search" class="form-control" placeholder="Search" style="width: 70%;height: 60%;" aria-label="Search" aria-describedby="button-addon2">
+            <button class="btn btn-warning  btn-sm  btn-outline-primary" style="color:var(--secondary-color)" name="search"  type="submit" id="button-addon2"><ion-icon name="search-outline"></ion-icon>Search</button>
+         
+            </form>
+          </div>
         </div>
-      </div>
-    </nav> 
+      </nav> 
 
- <h1 class="h1 text-light text-center margin-5rem sticky-top" style=" margin-top: 100px;">ABOUT AL-MUMTAZ</h1>
+ <h1 class="h1  text-center margin-5rem sticky-top" style=" margin-top: 100px; color: var(--secondary-color);">ABOUT AL-MUMTAZ</h1>
 
 
   
@@ -89,7 +90,7 @@
       <div class=" container align-item-center">
         <div class="row">
   
-          <div class="col-6" style="margin-top: 10%;  margin-bottom: 10%;">
+          <div class="col-6" style="margin-top: 10%; color: var(--secondary-color); margin-bottom: 10%;">
             <h3><b>Welcome TO AL-MUMTAZ</b><br>Primary&Secondary School</h3>
            
             <p class="h6" style="font-family: 'Times New Roman', Times, serif;">  Al-mumtaz Primary&Secondary School (MPSS) is private
@@ -112,14 +113,14 @@
   <div class="row" style="margin:50px;">
   
     <div class="col-6" style="margin-top: 10%;  margin-bottom: 10%;">
-      <p class="h2" style="font-family: 'Times New Roman', Times, serif; color: green;">  We are different and we like it that way. Al-mumtaz  is professionally oriented School.</p> <br>
+      <p class="h2" style="font-family: 'Times New Roman', Times, serif; color: var(--secondary-color);">  We are different and we like it that way. Al-mumtaz  is professionally oriented School.</p> <br>
     
       </div>
 
       <div class="col-6" style="background-color: green; text-align: center; ">
-        <h1 style="color: white;"><b>18&nbsp;+</b></h1>
+        <h1 style="color: var(--secondary-color);"><b>18&nbsp;+</b></h1>
         <img src="mtz logo.jpg" alt="" style="width: 120px; height: 120px; text-align: center; margin-top: 20px;"> <br><br><br>
-        <p style="color: white;">Years of Experience</p>
+        <p style="color:var(--secondary-color);">Years of Experience</p>
       </div>
 
         <!-- <div class="col-6" style="margin-top: 10%; margin-bottom: 10%;  ">
@@ -131,7 +132,7 @@
 
 <div class="row">
   
-  <div class="col-6" style="margin-top: 10%;  margin-bottom: 10%;">
+  <div class="col-6" style="margin-top: 10%; color: var(--secondary-color);  margin-bottom: 10%;">
     <p class="h6" style="font-family: 'Times New Roman', Times, serif;">  Our academic staff is not only some of the smartest but passionate
       about providing <br>students with up to date curriculums and text books and producing experienced,<br>
        engaged successful graduates. <br><br>Al-mumtaz has an inviting environment with a variety of quality
@@ -156,9 +157,9 @@
     <div class="col">
       <div class="card h-100">
        
-        <div class="card-body">
+        <div class="card-body" style="background-color: var(--primary-color);">
           <h1 class="h1 text-success"><ion-icon name="medkit-outline" style=" padding-top: 30px; margin-left: 30px; color: green;"></ion-icon> &nbsp;Our Vision</h1><br><br>
-      <p style=" color: rgb(100, 96, 96);font-size: 20px; text-align: start; font-family: 'Times New Roman', Times, serif;  margin-left: 30px;">To become a university of international reputation and
+      <p style=" color:var(--secondary-color);font-size: 20px; text-align: start; font-family: 'Times New Roman', Times, serif;  margin-left: 30px;">To become a university of international reputation and
          a distinguished institution of higher learning in research and innovation.</p>
    </div>
       </div>
@@ -166,25 +167,25 @@
     <div class="col">
       <div class="card h-100">
         
-        <div class="card-body">
+        <div class="card-body" style="background-color: var(--primary-color);">
           <h1 class="h1 text-success"><ion-icon name="medkit-outline" style=" padding-top: 30px; margin-left: 30px; color: green;"></ion-icon> &nbsp;Our Mission</h1><br><br>
-      <p style=" color: rgb(100, 96, 96); font-family: 'Times New Roman', Times, serif; font-size: 20px; text-align: start; margin-left: 30px;">To contribute to the advancement of knowledge and learning through research and education. <br> <br>
+      <p style=" color: var(--secondary-color); font-family: 'Times New Roman', Times, serif; font-size: 20px; text-align: start; margin-left: 30px;">To contribute to the advancement of knowledge and learning through research and education. <br> <br>
         To produce graduates who meet the expectations of the nation. <br><br> To develop innovative and responsible leaders who are capable of dealing with changes in the global environment.</p>
    </div>
       </div>
     </div>
-    <div class="col">
+    <div class="col" >
       <div class="card h-100">
       
-        <div class="card-body" style="font-family: 'Times New Roman', Times, serif;">
+        <div class="card-body" style="background-color: var(--primary-color); font-family: 'Times New Roman', Times, serif;">
 
           <h1 class="h1 text-success"><ion-icon name="medkit-outline" style=" padding-top: 30px; margin-left: 30px; color: green;"></ion-icon> &nbsp;Core Values</h1><br><br>
       
-          <li style="list-style: none; font-size: 35px; margin-left: 20px;">Integrity</li>
-          <li style="list-style: none; font-size: 35px; margin-left: 20px;">Academic Rigor</li>
-          <li style="list-style: none; font-size: 35px; margin-left: 20px;">Innovation</li>
-          <li style="list-style: none; font-size: 35px; margin-left: 20px;">Social Responsibility</li>
-          <li style="list-style: none; font-size: 35px; margin-left: 20px;">Accountability</li>
+          <li style="list-style: none; color: var(--secondary-color); font-size: 35px; margin-left: 20px;">Integrity</li>
+          <li style="list-style: none; color: var(--secondary-color); font-size: 35px; margin-left: 20px;">Academic Rigor</li>
+          <li style="list-style: none; color: var(--secondary-color); font-size: 35px; margin-left: 20px;">Innovation</li>
+          <li style="list-style: none; color: var(--secondary-color); font-size: 35px; margin-left: 20px;">Social Responsibility</li>
+          <li style="list-style: none; color: var(--secondary-color); font-size: 35px; margin-left: 20px;">Accountability</li>
         </div>
       </div>
     </div>
@@ -195,7 +196,7 @@
 <!--start  footer section -->
 <footer >
   <div class="container">
-    <div class="row row-cols-4">
+    <div class="row row-cols-4"style="color: var(--secondary-color );">
       
       <div class="subject col-8" >
         <img src="mtz logo.jpg" alt="Logo" style="width: 30px;">
@@ -217,6 +218,18 @@
 
 <!--End  footer section-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script>
+  var mon = document.getElementById("mon");
+mon.onclick= function(){
+document.body.classList.toggle("dark-theme")
+if(document.body.classList.contains("dark-theme")){
+mon. src= "sun.png";
+} else{
+mon. src = "theme.png";
+}
+
+}
+  </script>
 </body>
 </html>
     
