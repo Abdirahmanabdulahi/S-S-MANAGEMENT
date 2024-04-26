@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="myschool.CSS">
+    <link rel="stylesheet" href="myschool.CSS" id="style">
     
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
@@ -11,71 +11,75 @@
 
     <title>S S MANAGEMENT </title>
 </head>
-<body style="background-color: rgb(121, 172, 172);">
-    <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-success sticky-top"> 
-        <div class="container-fluid">
-          <a class="navbar-brand" style="color: white;" href="#"> <img src="mtz logo.jpg" class="" alt="" width="50"> AL-MUMTAAZ <span style="font-size: 8px; color: blue;">Primary&Secondary School<ion-icon name="school-outline"></ion-icon></span>&nbsp;</a>
-          <img src="theme.png" style="width: 1%;" alt="">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>&nbsp;&nbsp;
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul id="mnu" class="navbar-nav me-auto mb-2 mb-lg-0 sticky-top">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="About Us.html">About</a></li>
+<body style="background-color: rgb(151, 176, 176);">
+      <section class="section-colortheme">
+        <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-success sticky-top"> 
+          <div class="container-fluid">
+            <a class="navbar-brand" style="color: var(--secondary-color);" href="#"> <img src="mtz logo.jpg" class="" alt="" width="50"> AL-MUMTAAZ <span style="font-size: 8px; color: blue;">Primary&Secondary School<ion-icon name="school-outline"></ion-icon></span>&nbsp;</a>
+            <div class="form-check form-switch">
+              <input class="form-check-input" type="checkbox" role="switch" id="togle" />
+              <label class="form-check-label"  id="togle-inner" for="togle">dark</label>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>&nbsp;&nbsp;
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+              <ul id="mnu" class="navbar-nav me-auto mb-2 mb-lg-0 sticky-top" >
                 <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a></li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Register.html">Register</a></li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="Verify.html">Verify</a></li>
-
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="DASHBOARD RES.HTML" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <!-- Dashboard -->
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="">DASHBOARD</a></li>
-                  <li><a class="dropdown-item" href="Teacher.html"><ion-icon name="man-outline"></ion-icon>TEACHEARS MANAGE</a></li>
-                  <li><a class="dropdown-item" href="Students.html"><ion-icon name="people-outline"></ion-icon>&nbsp;STUDENTS MANAGE</a></li>
-                  <li><a class="dropdown-item" href="Classes.html"><ion-icon name="home"></ion-icon>&nbsp;CLASS MANAGE </a></li>
-                  <li><a class="dropdown-item" href="Exam.html"><ion-icon name="pencil-outline"></ion-icon>&nbsp;EXAM MANAGE  </a></li>
-                  <li><a class="dropdown-item" href="Attendence.html"><ion-icon name="checkmark-done-outline"></ion-icon>ATTENDANCE MANAGE</a></li>
-                  <li><a class="dropdown-item" href=""><ion-icon name="stats-chart-outline"></ion-icon>&nbsp;ACTIVITIES MANAGE</a></li>
-                  <li><a class="dropdown-item" href=""><ion-icon name="reader-outline"></ion-icon>&nbsp;ACADEMIC MANAGE</a></li>
-                  <li><a class="dropdown-item" href=""><ion-icon name="accessibility"></ion-icon>&nbsp; EMPLOYEE MANAGE</a></li>
-                  <li><a class="dropdown-item" href="finance.html"><ion-icon name="logo-usd"></ion-icon>&nbsp;FINANCE MANAGE</a></li>
-                  <li><a class="dropdown-item" href=""><ion-icon name="calendar-outline"></ion-icon>&nbsp;EVENTS MANAGE </a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                  <li><a class="dropdown-item" href=""><ion-icon name="people-circle-outline"></ion-icon>&nbsp;Meeting </a></li>
-                  <li><a class="dropdown-item" href=""><ion-icon name="warning"></ion-icon>&nbsp;REPORTS</a></li>
-                  <li><a class="dropdown-item" href=""><ion-icon name="person"></ion-icon>&nbsp;USERS MANAGE</a></li>
-                  <li><a class="dropdown-item" href=""><ion-icon name="receipt"></ion-icon>&nbsp;COMPLAIN</a></li>
-                  <li><a class="dropdown-item" href=""><ion-icon name="mail-outline"></ion-icon>&nbsp; SMS </a></li>
-                  <li><a class="dropdown-item" href=""><ion-icon name="settings-outline"></ion-icon>&nbsp;SETTING</a></li>
-                </ul>
-              </li> &nbsp; &nbsp;
-             
-              <button class="btn btn-sm btn-success btn-outline-dark" type="submit"><a style="color: aliceblue; text-decoration: none;" href="login.html">LogIn </a></button>&nbsp;
-              <button class="btn btn-sm btn-primary btn-outline-dark" type="submit"><a style="color: rgb(10, 10, 10); text-decoration: none;" href="Sing Up.html">SingUp</a></button>
-            </ul> &nbsp;
-            <form class="d-flex">
-              <!-- <input class="form-control me-2" type="search" placeholder="Search "  aria-label="Search" >
-              <button class="btn btn-sm  btn-light btn-outline-dark" type="submit">Search<ion-icon name="pencil-outline"></ion-icon>&nbsp;</button>
-            -->
-            <input type="search" class="form-control" placeholder="Search" aria-label="Search" aria-describedby="button-addon2">
-            <button class="btn btn-light btn-sm  btn-outline-dark"  type="submit" id="button-addon2"><ion-icon name="search-outline"></ion-icon>Search</button>
-         
-            </form>
+                  <a class="nav-link active"  aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link"  href="About Us.html">About</a></li>
+                  <li class="nav-item">
+                      <a class="nav-link"  href="contact.html">Contact</a></li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="Register.html">Register</a></li>
+                          <li class="nav-item">
+                              <a class="nav-link"  href="Verify.html">Verify</a></li>
+  
+                <li class="nav-item dropdown">
+                  <!-- <a class="nav-link dropdown-toggle" style="color:var(--secondary-color)"  href="DASHBOARD RES.HTML" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dashboard
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="">DASHBOARD</a></li>
+                    <li><a class="dropdown-item" href="Teacher.html"><ion-icon name="man-outline"></ion-icon>TEACHEARS MANAGE</a></li>
+                    <li><a class="dropdown-item" href="Students.html"><ion-icon name="people-outline"></ion-icon>&nbsp;STUDENTS MANAGE</a></li>
+                    <li><a class="dropdown-item" href="Classes.html"><ion-icon name="home"></ion-icon>&nbsp;CLASS MANAGE </a></li>
+                    <li><a class="dropdown-item" href="Exam.html"><ion-icon name="pencil-outline"></ion-icon>&nbsp;EXAM MANAGE  </a></li>
+                    <li><a class="dropdown-item" href="Attendence.html"><ion-icon name="checkmark-done-outline"></ion-icon>ATTENDANCE MANAGE</a></li>
+                    <li><a class="dropdown-item" href=""><ion-icon name="stats-chart-outline"></ion-icon>&nbsp;ACTIVITIES MANAGE</a></li>
+                    <li><a class="dropdown-item" href=""><ion-icon name="reader-outline"></ion-icon>&nbsp;ACADEMIC MANAGE</a></li>
+                    <li><a class="dropdown-item" href=""><ion-icon name="accessibility"></ion-icon>&nbsp; EMPLOYEE MANAGE</a></li>
+                    <li><a class="dropdown-item" href="finance.html"><ion-icon name="logo-usd"></ion-icon>&nbsp;FINANCE MANAGE</a></li>
+                    <li><a class="dropdown-item" href=""><ion-icon name="calendar-outline"></ion-icon>&nbsp;EVENTS MANAGE </a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    <li><a class="dropdown-item" href=""><ion-icon name="people-circle-outline"></ion-icon>&nbsp;Meeting </a></li>
+                    <li><a class="dropdown-item" href=""><ion-icon name="warning"></ion-icon>&nbsp;REPORTS</a></li>
+                    <li><a class="dropdown-item" href=""><ion-icon name="person"></ion-icon>&nbsp;USERS MANAGE</a></li>
+                    <li><a class="dropdown-item" href=""><ion-icon name="receipt"></ion-icon>&nbsp;COMPLAIN</a></li>
+                    <li><a class="dropdown-item" href=""><ion-icon name="mail-outline"></ion-icon>&nbsp; SMS </a></li>
+                    <li><a class="dropdown-item" href=""><ion-icon name="settings-outline"></ion-icon>&nbsp;SETTING</a></li>
+                  </ul>
+                </li> &nbsp; &nbsp; -->
+               
+                <button class="btn btn-sm btn-info btn-outline-primary" type="submit"><a style="color: aliceblue; width: 70%; text-decoration: none;" href="login.html">LogIn </a></button>&nbsp;
+                <button class="btn btn-sm btn-primary btn-outline-secondary" type="submit"><a style="color: rgb(10, 10, 10); width: 70%; text-decoration: none;" href="Sing Up.html">SingUp</a></button>
+              </ul> &nbsp;
+              <form class="d-flex">
+                <!-- <input class="form-control me-2" type="search" placeholder="Search "  aria-label="Search" >
+                <button class="btn btn-sm  btn-light btn-outline-dark" type="submit">Search<ion-icon name="pencil-outline"></ion-icon>&nbsp;</button>
+              -->
+              <input type="search" class="form-control" placeholder="Search" style="width: 70%;height: 60%;" aria-label="Search" aria-describedby="button-addon2">
+              <button class="btn btn-warning  btn-sm  btn-outline-primary"  name="search"  type="submit" id="button-addon2"><ion-icon name="search-outline"></ion-icon>Search</button>
+           
+              </form>
+            </div>
           </div>
-        </div>
-      </nav> 
-
-      <section>
+        </nav>
+        </section>
+      <section class="section-colortheme">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
         
             <div class=" container align-item-center">
@@ -90,7 +94,7 @@
                       <p class="h6" style="font-family: 'Times New Roman', Times, serif;">  Al-mumtaz P&S school Where Excellence in Education Finds Optimum Scholars. <br>
                         Al-mumtaz Scholars is the Residence of Superior Learning & academic Quality.
                         </p> 
-                      <button class="btn w- btn-danger" style="margin-left: 30%; margin-bottom: 10px; padding: 10px; text-decoration: none;"><a href="About Us.html"  style="color: aliceblue; text-decoration: none;">Learn More</a></button>
+                      <button class="btn w- btn-danger" style="margin-left: 30%; margin-bottom: 10px; padding: 10px; text-decoration: none;"><a href="About Us.html"   style="color: aliceblue; text-decoration: none;">Learn More</a></button>
                     </div>
 
                     <div class="col-6" style="margin-top: 10%; margin-bottom: 10%;  ">
@@ -100,9 +104,7 @@
         </div> 
         </div>   
         </div>   
-      </section>
-
-      <SEction>
+      <SEction class="section-colortheme">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -113,23 +115,23 @@
               <div class="carousel-item active d-flex">
                 <img src="images/ardayda.jpg" class="d-block w-50" alt="...">
                 <img src="images/ardayda.jpg" class="d-block w-50" alt="...">
-                <div class="carousel-caption d-none d-md-block ">
-                  <h5 style="color: rgb(249, 6, 6);">our high students</h5>
-                  <p style="color: blue;">Some representative of Almumtaz high school.</p>
+                <div class="carousel-caption d-none d-md-block " >
+                  <h5 >our high students</h5>
+                  <p >Some representative of Almumtaz high school.</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="Al-mumtaz/std camebac.jpg" class="d-block w-50" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h5 style="color: rgb(249, 6, 6);">our high students</h5>
-                  <p style="color: blue;">Some representative of Almumtaz high school.</p>
+                  <h5 >our high students</h5>
+                  <p >Some representative of Almumtaz high school.</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="Al-mumtaz/with techers.jpg" class="d-block w-50" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5 style="color: rgb(249, 6, 6);">our high students</h5>
-                  <p style="color: blue;">Some representative of Almumtaz high school.</p>
+                <div class="carousel-caption d-none d-md-block" >
+                  <h5 >our high students</h5>
+                  <p >Some representative of Almumtaz high school.</p>
                 </div>
               </div>
             </div>
@@ -142,10 +144,10 @@
               <span class="visually-hidden">Next</span>
             </button>
           </div>
-      </SEction> <br><br>
+      </SEction> 
 
        <!--Started Banner section-->
-<div class="banner banner-expand-sm ">
+<div class="banner banner-expand-sm " >
     <div class="col">
   <input type="radio" name="slider" id="Home" checked style="width: 20%;">
   <input type="radio" name="slider" id="About" checked style="width: 20%;">
@@ -185,25 +187,25 @@
       
     <div class="content content-2">
         <div class="title">About</div>
-        <p>We wanted to have an opportunity For build in the Somali community, culture, and language.
+        <p >We wanted to have an opportunity For build in the Somali community, culture, and language.
           Somalis families wanted to have an opportunity for deep family learning. 
           Al-mumtaz is the Home of Quality Education.
           </p>
          </div>
         <div class="content content-3">
         <div class="title">Contact</div>
-        <p>Contact module we used for managing the contact information displayed our school.
+        <p >Contact module we used for managing the contact information displayed our school.
            And include more details such as Email addresses And google map.</p>
     </div>
     
     <div class="content content-4">
         <div class="title">Register</div>
-        <p>Registration module manages the enrollment of students for school, Include Student Full information.
+        <p >Registration module manages the enrollment of students for school, Include Student Full information.
           First Select or fill your FullName , your ID, your class,  your Birth Date, your  GENDER & ETC.</p>
     </div>
     <div class="content content-5">
         <div class="title">Dashboard</div>
-        <p>The person in this module has control over the entire system
+        <p style="font-size: 40px;">The person in this module has control over the entire system
            as he/she can add, delete anyone from the system.
            The admin can view the details of another person and can edit any details. 
            The users from another module will send the request to admin for any change.</p>
@@ -211,61 +213,38 @@
     <div class="content content-6"> </div>
   </section>
   </div>
-   </div> <br><br><br>
+   </div> 
   
-   <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      const radioButtons = document.querySelectorAll('input[type="radio"]');
-      const contents = document.querySelectorAll('.content');
-  
-      let currentIndex = 0;
-  
-      function showContent(index) {
-        contents.forEach(content => {
-          content.style.display = "none";
-        });
-  
-        contents[index].style.display = "block";
-        radioButtons[index].checked = true;
-      }
-  
-      function nextContent() {
-        currentIndex = (currentIndex + 1) % contents.length;
-        showContent(currentIndex);
-      }
-  
-      setInterval(nextContent, 4000); // Change content every 5 seconds (adjust as needed)
-    });
-  </script>
+   
   
   
   
   <!--End Banner section-->
 
   <!-- start section -->
-  <section >
+  <section class="section-colortheme">
   
-    <div class="col-12">
+    <div class="col-12" >
       <h1 class="h1 text-center">OUR  ACTIVITIES </h1>
       <h4 class="h4 text-center">Welcome AL-mumtaz school theese are our gadline of student levels. </h4>
     </div>
-</section> <br>
+</section> 
 
 
 
-<section>
-  <div class="container px-4">
+<section class="section-colortheme">
+  <div class="container px-4" >
    <div class="row gx-3">
    
  
       <div class="col">
  
-       <div class="p-3 border bg-light"> <img src="mtz logo.jpg" alt=""> <br><br>
+       <div class="p-3 border" id="cardbody"> <img src="mtz logo.jpg" alt=""> <br><br>
        
          <div class="card-body">
           
            <h2>Thursday & Friday</h2>
-           <h6 class="card-title" style="color: rgb(8, 135, 247);">OPEN 7:00 AM TO 5:00 PM </h6>
+           <h6 class="card-title">OPEN 7:00 AM TO 5:00 PM </h6>
           <a href="our activities.html" class="btn w-100 btn-success">More Infor</a>
          </div>
        
@@ -276,12 +255,12 @@
  
       <div class="col">
  
-       <div class="p-3 border bg-light"> <img src="mtz logo.jpg" alt=""> <br><br>
+       <div class="p-3 border" id="cardbody"> <img src="mtz logo.jpg" alt=""> <br><br>
        
          <div class="card-body">
           
            <h2>Five Days Noon</h2>
-           <h6 class="card-title" style="color: rgb(8, 135, 247);">OPEN 7:00 AM TO 5:00 PM </h6>
+           <h6 class="card-title" >OPEN 7:00 AM TO 5:00 PM </h6>
           <a href="our activities.html" class="btn w-100 btn-success">More Infor</a>
          </div>
        
@@ -292,12 +271,12 @@
  
       <div class="col">
  
-       <div class="p-3 border bg-light"> <img src="mtz logo.jpg" alt=""> <br><br>
+       <div id="cardbody" class="p-3 border"> <img src="mtz logo.jpg" alt=""> <br><br>
        
          <div class="card-body">
            
            <h2>Five Days Morning</h2>
-           <h6 class="card-title" style="color: rgb(8, 135, 247);">OPEN 7:00 AM TO 5:00 PM </h6>
+           <h6 class="card-title" >OPEN 7:00 AM TO 5:00 PM </h6>
           <a href="our activities.html" class="btn w-100 btn-success">More Infor</a>
          </div>
        
@@ -309,7 +288,7 @@
    </div>
  </div>
  
- </section>
+ </section> 
 
 
 
@@ -318,27 +297,27 @@
       
 
 
- <section >
+ <section class="section-colortheme">
   
-  <div class="col-12">
+  <div class="col-12" >
     <h1 class="h1 text-center">OUR FACILITIES </h1>
     <h4 class="h4 text-center"> Exams and assessments our main goal to improbve student's ability</h4>
   </div>
-</section> <br>
+</section> 
 
-  <section>
+  <section class="section-colortheme">
       <div class="container mt-3">
           <div class="row">
           <div class="col-3">
             <img src="Banner.jpg" class="img-thumbnail" alt="Cinque Terre" width="304" height="236"> <br> <br>
-          <h5 class="card-title" style="text-transform: capitalize; color: white; font-family: 'Times New Roman', Times, serif; "><a href="OUR FACILITIES.html"><button class="btn-info">Visit Now</button></a></h5>
+          <h5 class="card-title" style="text-transform: capitalize;  font-family: 'Times New Roman', Times, serif; "><a href="OUR FACILITIES.html"><button class="btn-info" >Visit Now</button></a></h5>
          
         </div>
          
             <div class=" col-3">
              <img src="Banner.jpg" class="img-fluid" alt="Cinque Terre" width="304" height="236"> <br> <br>
               
-            <h5 class="card-title" style="text-transform: capitalize; color: white; font-family: 'Times New Roman', Times, serif; "><a href="OUR FACILITIES.html"><button class="btn-success">CLICK Here</button></a></b></h5>
+            <h5 class="card-title" style="text-transform: capitalize;  font-family: 'Times New Roman', Times, serif; "><a href="OUR FACILITIES.html"><button class="btn-success" >CLICK Here</button></a></b></h5>
             
             </div>
 
@@ -346,46 +325,46 @@
             <div class=" col-3">
               <img src="Banner.jpg" class="img-fluid" alt="Cinque Terre" width="304" height="236"> <br> <br> 
                
-             <h5 class="card-title" style="text-transform: capitalize; color: white; font-family: 'Times New Roman', Times, serif; "><a href="OUR FACILITIES.html"><button class="btn-primary">Visit Here</button></a> </b></h5>
+             <h5 class="card-title" style="text-transform: capitalize;  font-family: 'Times New Roman', Times, serif; "><a href="OUR FACILITIES.html"><button class="btn-primary " >Visit Here</button></a> </b></h5>
              
              </div>
              
             <div class=" col-3">
               <img src="Banner.jpg" class="img-fluid" alt="Cinque Terre" width="304" height="236"> <br> <br>
                
-             <h5 class="card-title" style="text-transform: capitalize; color: white; font-family: 'Times New Roman', Times, serif; "><a href="OUR FACILITIES.html"><button class="btn-danger">Click Now</button></a></h5>
+             <h5 class="card-title" style="text-transform: capitalize;  font-family: 'Times New Roman', Times, serif; "><a href="OUR FACILITIES.html"><button class="btn-danger">Click Now</button></a></h5>
              </div>
             </div>
       </div>
         
-  </section> <br><br> <br>
+  </section> 
 
 
 
       
       
       
-      <section>
+      <section class="section-colortheme">
         <div class="container">
           <div class="row row-cols-4">
-            <div class="col-6" style="font-size: 30px; font-family: 'Times New Roman', Times, serif;">
+            <div class="col-6" style="font-size: 30px;  font-family: 'Times New Roman', Times, serif;">
               <h1>LIBRARY مكيبة</h1>
               <p><ion-icon name="book-outline"></ion-icon>&nbsp;Islamic & history books.</p>
               <p><ion-icon name="book-outline"></ion-icon>&nbsp;Bussiness & Technoolagy books.</p>
               <p><ion-icon name="earth-outline"></ion-icon>&nbsp;Caltute & ethics books.</p>
               <p><ion-icon name="laptop-outline"></ion-icon>&nbsp;Arts & skills books.</p>
               <img src="Al-mumtaz/Taaz.jpg" width="100" alt="">
-              <button id="toggleButton" onclick="toggleColor()">change Color</button>
+            
             </div>
             
             
-            <div class="col-6" style="font-size: 30px; font-family: 'Times New Roman', Times, serif;">
+            <div class="col-6" style="font-size: 30px;  font-family: 'Times New Roman', Times, serif;">
               <h1>SUBJECTS مواد</h1>
               <p><ion-icon name="book-outline"></ion-icon>&nbsp;Somaali, Arabic & English.</p>
               <p><ion-icon name="book-outline"></ion-icon>&nbsp;islamic, history & Geography. .</p>
               <p><ion-icon name="earth-outline"></ion-icon>&nbsp;biology, chemistery, physics&math.</p>
               <p><ion-icon name="laptop-outline"></ion-icon>&nbsp;technology& bussiness .</p>
-              <img src="images/subjects.png" width="100" alt="">
+              
             </div>
             
             
@@ -393,7 +372,7 @@
           
         </div>
   
-      </section> <br>
+      </section> 
 
 
 
@@ -421,11 +400,69 @@
 
      
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script>
-      function toggleColor() {
-          var body = document.body;
-          body.style.backgroundColor = (body.style.backgroundColor === 'black') ? 'white' : ' black';
-      }
+    <!-- <script>
+      var mon = document.getElementById("mon");
+mon.onclick= function(){
+  document.body.classList.toggle("dark-theme")
+  if(document.body.classList.contains("dark-theme")){
+    mon. src= "sun.png";
+  } else{
+    mon. src = "theme.png";
+  }
+
+}
+      </script> -->
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const radioButtons = document.querySelectorAll('input[type="radio"]');
+          const contents = document.querySelectorAll('.content');
+      
+          let currentIndex = 0;
+      
+          function showContent(index) {
+            contents.forEach(content => {
+              content.style.display = "none";
+            });
+      
+            contents[index].style.display = "block";
+            radioButtons[index].checked = true;
+          }
+      
+          function nextContent() {
+            currentIndex = (currentIndex + 1) % contents.length;
+            showContent(currentIndex);
+          }
+      
+          setInterval(nextContent, 4000); // Change content every 5 seconds (adjust as needed)
+        });
+      </script>
+      <script>
+          let icon = document.getElementById("togle");
+  let style = document.getElementById("style");
+  let togleinner = document.getElementById("togle-inner")
+  
+  icon.onclick = function(){
+    // style.href = ""
+    
+    
+  
+    if(style.href.includes("DARK.CSS")){
+      style.href = "myschool.CSS"
+  togleinner.innerText="dark"
+     
+    } else if (style.href.includes("myschool.CSS")) {
+      style.href = "DARK.CSS"
+      togleinner.innerText="white"
+    
+      
+    }
+  
+   
+  }
+  $(document).ready(function(){
+    let marks; 
+  });
       </script>
   </body>
 </html>
