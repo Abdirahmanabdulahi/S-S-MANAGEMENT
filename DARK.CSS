@@ -1,0 +1,146 @@
+/* Start Banner  section*/
+marquee{ animation:3.5s infinite linear; animation-duration: 0.1s;}
+.banner { background-image: url("Banner.jpg"); background-image: repeating-linear-gradient(); width: 100%;
+  height: 100%; background-position: center; background-size: cover; position: relative; display: flex;
+  justify-content: center; align-items: center; z-index: 3; }
+
+.banner::after{ content: ''; background-color: rgb(14, 13, 13); position: absolute; width: 100%; height: 100%;
+ opacity: .8; z-index: -1;}
+
+/* End Banner section*/
+
+/* Start here section's colors */
+.section-colortheme{
+    background-color: black;
+    color: aliceblue;
+}
+
+#cardbody{
+    background-color: black;
+    color: aliceblue;
+}
+#nav{
+    background-color: black;
+    color: aliceblue;
+}
+
+/* footer */
+
+footer {
+  background-color: black;
+  padding: 20px 0; /* Adjust padding as needed */
+}
+
+.container {
+  max-width: 1200px; /* Set maximum width for the container */
+  margin: 0 auto; /* Center the container */
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.subject,
+.bottom-footer {
+  flex: 0 0 50%; /* Two columns, each taking 50% of the width */
+}
+
+h2 {
+  color: #f2f2f2; /* Set the color for heading text */
+}
+
+ul {
+  list-style: none; /* Remove default list styles */
+  padding: 0;
+  display: flex; /* Display list items in a row */
+}
+
+ul li {
+  margin-right: 15px; /* Adjust spacing between social media icons */
+}
+
+ion-icon {
+  font-size: 20px; /* Adjust the icon size as needed */
+  color: #f2f2f2; /* Set the color for icon */
+}
+
+.bottom-footer h6 {
+    
+    color: white;
+  }
+
+  .subject p {
+    color: white;
+  }
+
+/* footer */
+
+
+/*home section*/
+/* section{
+    filter: blur(0.3px);
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+.ip{
+  filter: blur(0.3px); width: 80%; display: flex; align-items: center; justify-content: center; }
+
+section .content{ display: none; margin-bottom: 20px; }
+section .content .title{ font-size: 21px; font-weight: 600; margin: 30px 0 10px 0; justify-content: center; }
+#Home:checked ~ section .content-1{ display: block; }
+#About:checked ~ section .content-2{ display: block; }
+#Contact:checked ~ section .content-3{ display: block; }
+#Register:checked ~ section .content-4{ display: block; }
+#Dashboard:checked ~ section .content-5{ display: block; }
+
+.home h3{ font-size: 14xp; color: #f2f2f2; text-align: center; }
+
+.content p{ font-family: 'Times New Roman', Times, serif; font-size: 50px; color: #f2f2f2; } 
+.title{ color: #ffff; font-family: 'Times New Roman', Times, serif; font-size: x-large; }
+
+
+/* End home section*/
+
+
+nav.sticky{ 
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+
+
+
+
+
+
+
+/* Start Responsive */
+@media (max-width:767px){ .coent { display: table-row;}
+}
+/* End Responsive */
+
+
+
+
+/* Start Responsive */
+@media (max-width:767px){ .coent { display: table-row;}
+}
+/* End Responsive */
+
+
+
+/* starts code of dark and white modes */
+/* :root{
+  --primary-color: #edf2fc;
+  --secondary-color:#212121 ;
+  }
+  
+  
+  .dark-theme{
+  --primary-color:#000106;
+  --secondary-color:#fff ;
+  } */
