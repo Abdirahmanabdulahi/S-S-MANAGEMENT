@@ -95,6 +95,120 @@ nav.sticky{
 
 
 
+.RegisterForm {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#imgeBanner{
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+.Registerlebel {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.inpt , #city , #Capital[type="text" ],
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+
+
+select {
+  cursor: pointer;
+}
+
+input[readonly] {
+  background-color: #fdfbfb; 
+ 
+}
+
+#flag{  padding: 80px;
+
+}
+#flag{  padding: 80px;
+
+}
+
+input[type="text"]:invalid {
+  border: 1px solid red;
+}
+
+
+
+.gradeA {
+  color: green;
+}
+
+.gradeB {
+  color: blue;
+}
+
+.gradeC {
+  color: yellow;
+}
+
+.gradeD {
+  color: orange;
+}
+
+.gradeF {
+  color: red;
+}
+
+
+
+/* start verify form */
+
+    .Bannerrr img {
+        width: 100%;
+        height: auto;
+    }
+
+    .h1 {
+        color: #333;
+    }
+
+    .verify-form {
+        width: 100%;
+        padding: 10px;
+        font-size: 24px;
+        border-radius: 8px;
+        border: 1px solid #ccc;
+        margin-bottom: 20px;
+        background-color: rgb(255, 0, 208);
+    }
+
+    .btun-primary {
+        width: 100%;
+        padding: 12px;
+        font-size: 24px;
+        background-color: #007bff;
+        border: none;
+        border-radius: 8px;
+        color: #fff;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .btun-primary:hover {
+        background-color: #0056b3;
+    }
+
+
+
 
 
 
