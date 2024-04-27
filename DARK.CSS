@@ -111,11 +111,137 @@ nav.sticky{
   left: 0;
 }
 
+  /* Styles for the login form */
+  #login-form {
+    max-width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #f5f1f1;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(156, 128, 128, 0.1);
+}
+
+#login-form label {
+    display:block;
+    margin-bottom: 10px;
+    font-weight: bold;
+   
+}
+
+#login-form input{
+  background-color: #121112;
+  color: #f9f8f8;
+}
+
+
+#login-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #141415;
+    color: #fff;
+    border: 1px solid #f9f5f5;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#login-form input[type="submit"]:hover {
+    background-color: #d60fd6;
+}
+#login-form input{
+    background-color: #121112;
+    color: #faf7f7;
+}
+
+#login-message {
+    margin-top: 20px;
+    display: none;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(247, 251, 247);
+}
 
 
 
 
+/* start Registeration form */
+.RegisterForm {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #0e0e0e;
+  border: 1px solid #f9f5f5;
+  color: #f9f5f5;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
+#imgeBanner{
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+.Registerlebel {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.inpt , #city , #Capital[type="text" ],
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  background-color: #0f0e0e; 
+  color: #faf8f8;
+}
+
+
+
+select {
+  cursor: pointer;
+}
+
+input[readonly] {
+  background-color: #0f0e0e; 
+  color: #faf8f8;
+ 
+}
+
+#flag{  padding: 80px;
+
+}
+#flag{  padding: 80px;
+
+}
+
+input[type="text"]:invalid {
+  border: 1px solid red;
+}
+
+
+
+.gradeA {
+  color: green;
+}
+
+.gradeB {
+  color: blue;
+}
+
+.gradeC {
+  color: yellow;
+}
+
+.gradeD {
+  color: orange;
+}
+
+.gradeF {
+  color: red;
+}
 
 
 /* Start Responsive */
