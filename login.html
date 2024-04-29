@@ -55,11 +55,23 @@
       });
   });
 </script>
+
+
+<script>
+  $(document).ready(function(){
+    $("#hide").click(function(){
+      $(".LOG").hide();
+    });
+    $("#show").click(function(){
+      $(".LOG").show();
+    });
+  });
+  </script>
     <title>Login Page</title>
 </head>
 <body style="background-color: rgb(151, 176, 176);">
-      <section class="section-colortheme">
-        <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-success sticky-top"> 
+      <section class="section-colortheme" >
+        <nav id="nav " class="navbar navbar-expand-lg navbar-light bg-success sticky-top"> 
           <div class="container-fluid">
             <a class="navbar-brand" style="color: var(--secondary-color);" href="#"> <img src="mtz logo.jpg" class="" alt="" width="50"> AL-MUMTAAZ <span style="font-size: 2px; color: blue;">Primary&Secondary School<ion-icon name="school-outline"></ion-icon></span>&nbsp;</a>
             <div class="form-check form-switch">
@@ -70,8 +82,8 @@
               <span class="navbar-toggler-icon"></span>
             </button>&nbsp;&nbsp;
             <div class="collapse navbar-collapse" id="navbarSupportedContent" >
-              <ul id="mnu" class="navbar-nav me-auto mb-2 mb-lg-0 sticky-top" >
-                <li class="nav-item">
+              <ul id="mnu" class="navbar-nav me-auto mb-2 mb-lg-0 sticky-top" id="section-colortheme">
+                <li class="nav-item" >
                   <a class="nav-link active"  aria-current="page" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
@@ -124,11 +136,12 @@
             </div>
           </div>
         </nav>
+        </section>
 
-<section class="img-center" style="margin-top: 10px; margin-bottom: 10px;">
+<section  class="img-center" style="margin-top: 10px; margin-bottom: 10px;">
   <div class="container w-100 h-100">
-    <div id="login-form">
-        <form id="login" >
+    <div id="login-form" >
+        <form id="login" class="LOG" >
             <label for="email">Email:</label>
             <input  type="text" class="email" id="email" placeholder="Enter Your Email " required >
 
@@ -137,13 +150,27 @@
 
             <input  type="submit" value="Login">
             <div id="login-message"></div>
-          </form>
+          </form> <br>
 
-        
+         <!-- summit button -->
+   <div class="d-grid gap-2 col-6 mx-auto d-flex">
+    <button id="hide" class="btn btn-outline-secondary" type="submit">Hide</button>
+    <button id="show" class="btn btn-outline-secondary" type="submit">Show</button>
+    
+  </div> 
     </div>
+
+    
 
   </div>
 </section> <br> <br> <br>
+
+   
+  <!-- <p>If you click on the "Hide" button, I will disappear.</p>
+
+          <button id="hide">Hide</button>
+          <button id="show">Show</button>
+</div> -->
   
   <!-- Start footer -->
   <footer >
