@@ -14,15 +14,29 @@ marquee{ animation:3.5s infinite linear; animation-duration: 0.1s;}
     background-color: black;
     color: aliceblue;
 }
+.navbar  .nav-link a{
+   
+    color: aliceblue;
+}
+#nav{
+  background-color: black;
+  color: aliceblue;
+}
+.navbar{
+  background-color: black;
+  color: aliceblue;
+}
+nav.sticky{ 
+  position: fixed;
+  top: 0;
+  left: 0;
+}
 
 #cardbody{
     background-color: black;
     color: aliceblue;
 }
-#nav{
-    background-color: black;
-    color: aliceblue;
-}
+
 
 /* footer */
 
@@ -105,11 +119,7 @@ section .content .title{ font-size: 21px; font-weight: 600; margin: 30px 0 10px 
 /* End home section*/
 
 
-nav.sticky{ 
-  position: fixed;
-  top: 0;
-  left: 0;
-}
+
 
   /* Styles for the login form */
   #login-form {
