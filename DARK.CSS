@@ -14,13 +14,13 @@ marquee{ animation:3.5s infinite linear; animation-duration: 0.1s;}
     background-color: black;
     color: aliceblue;
 }
-.navbar  .nav-link a{
+.navbar  .nav-link{
    
-    color: aliceblue;
+    color: white !important;
 }
 #nav{
-  background-color: black;
-  color: aliceblue;
+  background-color: black !important;
+  
 }
 .navbar{
   background-color: black;
@@ -41,7 +41,7 @@ nav.sticky{
 /* footer */
 
 footer {
-  background-color: black;
+  background-color: rgb(28, 27, 27);
   padding: 20px 0; /* Adjust padding as needed */
 }
 
@@ -122,6 +122,11 @@ section .content .title{ font-size: 21px; font-weight: 600; margin: 30px 0 10px 
 
 
   /* Styles for the login form */
+  .mebg{
+    
+    background-color: #0e0e0e !important;
+    color: #f4f1f1;
+}
   #login-form {
     max-width: 300px;
     margin: 50px auto;
@@ -129,6 +134,8 @@ section .content .title{ font-size: 21px; font-weight: 600; margin: 30px 0 10px 
     border: 1px solid #f5f1f1;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(156, 128, 128, 0.1);
+    background-color: #0e0e0e;
+    color: #f4f1f1;
 }
 
 #login-form label {
@@ -140,9 +147,13 @@ section .content .title{ font-size: 21px; font-weight: 600; margin: 30px 0 10px 
 
 #login-form input{
   background-color: #121112;
-  color: #f9f8f8;
+  
 }
 
+.contactForm{
+  background-color: #0e0e0e;
+  counter-reset: white;
+}
 
 #login-form input[type="submit"] {
     width: 100%;
@@ -170,6 +181,7 @@ section .content .title{ font-size: 21px; font-weight: 600; margin: 30px 0 10px 
     font-weight: bold;
     color: rgb(247, 251, 247);
 }
+
 
 
 
@@ -208,6 +220,22 @@ select {
   color: #faf8f8;
 }
 
+.putin[type="search"]{
+background-color: #0e0e0e !important;
+color: white;
+}
+#putin[type="search"]{
+background-color: #0e0e0e !important;
+color: white;
+}
+
+.btn{
+  background-color: #0e0e0e !important;
+  color: white !important;
+}
+.btn a{
+  color: white !important;
+}
 
 
 select {
@@ -280,3 +308,5 @@ input[type="text"]:invalid {
   --primary-color:#000106;
   --secondary-color:#fff ;
   } */
+
+
