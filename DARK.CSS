@@ -237,6 +237,12 @@ color: white;
   color: white !important;
 }
 
+.navbar-toggler span{
+  color: rgb(249, 5, 5) !important;
+  background-color: rgb(247, 243, 243) !important;
+  
+}
+
 
 select {
   cursor: pointer;
