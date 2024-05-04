@@ -10,7 +10,21 @@
     <script src="jquery-3.7.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/d6f6bb0c69.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="DASHBOARD RES.CSS">
+
+    <link rel="stylesheet" href="DASHBOARD RES.CSS" id="style">
+    
+    
+
+    <script>
+        $(document).ready(function(){
+          $(".footer").mouseleave(function(){
+            $(".footer").hide();
+          });
+          $(".footer").mouseenter(function(){
+            $(".footer").show();
+          });
+        });
+        </script>
 
     <title>Classese form</title>
 </head>
@@ -19,8 +33,12 @@
     <div class="container-fluid">
         
             <div class="topbar">
+              <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="togle" />
+                <label class="form-check-label"  id="togle-inner" for="togle">Dark</label>
+              </div>
                 
-                <div><i id="menu-btn" class="fas fa-bars"></i></div>
+                
                 <div class="search">
                     <input type="text" id="find" class="search-box" placeholder="Search here" onkeyup="search()">
                     <i class="fas fa-search"></i>
@@ -92,143 +110,68 @@
 
 
         <div class="mainbar">
-          <SEction>
-            <FORm>
-              <div class="Banner"><img src="Img/claas std.png.jpg" class="img-fluid" alt="Banner"></div>
-              <h2 style="color: rgb(145, 255, 0);">CLASS INFOR</h2>
-
-              <div class="row">
-                <div class="col">
-                  
-                </div>
-              </div>
-              
-              <div class="row">
-                <div class="col">
-                  <Select class="form-select">
-                    <Option selected>Select Academic</Option required>
-                      <!-- <Option value="2" >2020-2021</Option>
-                      <Option value="2" >2021-2022</Option>
-                      <Option value="2" >2022-2023</Option> -->
-                      <Option value="2" >2023-2024</Option>
-                      <Option value="2" >2024-2025</Option>
-                  </Select>
-                  <div class="valid-feedback">.</div>
-                  <div class="invalid-feedback">.</div>
-                </div> <br><br>
-
-                <div class="col">
-                  <Select class="form-select">
-                    <Option selected>Select Shift</Option required>
-                      <Option value="2" >Morninig</Option>
-                      <Option value="2" >Afternoon</Option>
-                      <Option value="2" >Week-End</Option>
-                  </Select>
-                  <div class="valid-feedback">.</div>
-                  <div class="invalid-feedback">.</div>
-                </div> <br>
-
-                <div class="col">
-                  <Select class="form-select">
-                    <Option selected>Select  Batch</Option required>
-                      <Option value="2" >Preparation</Option>
-                      <Option value="2" >Primary</Option>
-                      <Option value="2" >Secondary</Option>
-                  </Select>
-                  <div class="valid-feedback">.</div>
-                  <div class="invalid-feedback">.</div>
-                </div> 
-              </div>
-
-            <div class="row">
-
-              <div class="col">
-                <Select class="form-select">
-                  <Option selected>Preparation Subjects</Option required>
-                    <!-- <Option value="13" >Preparation Subjects</Option> -->
-                    <Option value="13" >Farqurxin</Option>
-                    <Option value="13" >Carabi</Option>
-                    <Option value="13" >Xisaab</Option>
-                    <Option value="13" >Soomaali</Option>
-                    <Option value="13" >Tarbiyo</Option>
-                   
-                    
-                </Select>
-                <div class="valid-feedback">.</div>
-                <div class="invalid-feedback">.</div>
-              </div> <br><br>
-
-
-              <div class="col">
-                <Select class="form-select">
-                  <Option selected>Primary Subjects</Option required>
-                    <!-- <Option value="13" >Primary Subjects</Option> -->
-                    <Option value="13" >Technology</Option>
-                    <Option value="13" >Carabi</Option>
-                    <Option value="13" >Xisaab</Option>
-                    <Option value="13" >Soomaali</Option>
-                    <Option value="13" >Tarbiyo</Option>
-                    <Option value="13" >Saynis</Option>
-                    <Option value="14" >Cilmiga Bulshada</Option>
-                    <Option value="14" >English Language</Option>
-                    <li class="dropdown-divider"></li>
-                   
-                    
-                </Select>
-                <div class="valid-feedback">.</div>
-                <div class="invalid-feedback">.</div>
-              </div> <br><br>
-
-              <div class="col">
-                <Select class="form-select">
-                  <Option selected>Secondary Subjects</Option required>
-                    <!-- <Option value="13" >Secondary Subjects</Option> -->
-                    <Option value="1" >Islamic</Option>
-                    <Option value="2" >Arabic</Option>
-                    <Option value="3" >Somaali</Option>
-                    <Option value="4" >English</Option>
-                    <Option value="5" >History</Option>
-                    <Option value="6" >Geography</Option>
-                    <Option value="7" >Technoolagy</Option>
-                    <Option value="8" >Bussiness</Option>
-                    <Option value="9" >Biology</Option>
-                    <Option value="10" >Chemistery</Option>
-                    <Option value="11" >Math</Option>
-                    <Option value="12" >Physics</Option>
-                    <li class="dropdown-divider"></li>
-                   
-                    
-                </Select>
-                <div class="valid-feedback">.</div>
-                <div class="invalid-feedback">.</div>
-              </div> 
-          </div> 
-
-            <div class="row">
-              <div class="col">
-                <button class="btn btn-lg btn-info "  value="submit" type="submit">Add Class</button>
-              </div> <br> <br>
-
-              <div class="col">
-                <button class="btn btn-lg btn-primary "  value="reset" type="submit">Remove Class </button>
-              </div> <br>
-              <div class="col">
-                <button class="btn btn-lg btn-success " value="reset" type="submit">Edit Class</button>
-              </div> <br>
-              
-            </div>
-
-           
-            </FORm>
-          </SEction>         
-          
-           
-        </div>
+          <section>
+              <form action="" class="formclses">
+                <h1>Classes Form Infor......</h3>
+                  <div class="Banner"><img src="Img/claas std.png.jpg" style="width: 100%;" class="img-fluid" alt="Banner"></div>
+                  <h3>LIST OF CLASSES</h3>
+                  <ul id="classList">
+                      <!-- Existing classes will be added here -->
+                  </ul>
+                  <input type="text" id="classInput" placeholder="Add Your Class"><br>
+                  <div class="row">
+                      <div class="col">
+                          <button class="btn btn-lg btn-success" id="addClassBtn">Add Class</button>
+                      </div>
+                      <div class="col">
+                          <button class="btn btn-lg btn-success" id="removeClassBtn">Remove Class</button>
+                      </div>
+                      <div class="col">
+                          <button class="btn btn-lg btn-success" id="clearInputBtn">Clear Text</button>
+                      </div>
+                  </div>
+              </form>
+          </section>
+      </div>
       </div>
   
      
 
-<script src="USER REGISTER .JS"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-</body>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+      <script>
+          $(document).ready(function(){
+    // Function to add a class to the list
+    $("#addClassBtn").click(function(event) {
+        event.preventDefault(); // Prevent form submission
+        var className = $("#classInput").val().trim(); // Remove leading and trailing spaces
+        if (className !== '') {
+            // Slide up and down animation with color change
+            $("#classList")
+                .css("color", "green")
+                .slideUp(1000)
+                .slideDown(1000, function () {
+                    // Append the new class to the list
+                    $("#classList").append("<li>" + className + "</li>");
+                    // Clear input field
+                    $("#classInput").val("");
+                });
+        }
+    });
+
+    // Function to remove the last added class from the list
+    $("#removeClassBtn").click(function(event) {
+        event.preventDefault(); // Prevent form submission
+        $("#classList li:last-child").remove();
+    });
+
+    // Function to clear the input field
+    $("#clearInputBtn").click(function(event) {
+        event.preventDefault(); // Prevent form submission
+        $("#classInput").val("");
+    });
+});
+
+      </script>
+      </body>
 </html>
