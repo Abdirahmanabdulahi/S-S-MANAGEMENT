@@ -21,6 +21,17 @@
     });
   });
   </script>
+
+<script>
+  $(document).ready(function(){
+    $("#putin").on("keyup", function() {
+      var value = $(this).val().toLowerCase();
+      $(".collapse ul li").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      });
+    });
+  });
+  </script>
     <title>S S MANAGEMENT </title>
 </head>
 <body style="background-color: rgb(151, 176, 176);">
@@ -86,7 +97,9 @@
                 <button class="btn btn-sm  btn-light btn-outline-dark" type="submit">Search<ion-icon name="pencil-outline"></ion-icon>&nbsp;</button>
               -->
               <input id="putin"  type="search" class="form-control" placeholder="Search" style="width: 70%;height: 60%;" aria-label="Search" aria-describedby="button-addon2">
-              <button class="btn btn-warning  btn-sm  btn-outline-primary"  name="search"  type="submit" id="button-addon2"><ion-icon name="search-outline"></ion-icon>Search</button>
+              <button class="btn btn-primary btn-sm" type="button"onclick="document.getElementById('dtime').innerHTML = Date()">Date&Time.</button>
+  
+  <p id="dtime"></p>
            
               </form>
             </div>
