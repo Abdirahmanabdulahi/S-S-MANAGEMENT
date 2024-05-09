@@ -69,6 +69,23 @@ align-items: center;
     
 }
 
+body{background-color: red;}
+
+/* start search */
+.result-box ul{
+    background-color: red !important;
+    border-top: 1px solid #999;
+    padding: 15px 10px;
+}
+.result-box ul li{
+    list-style: none;
+    border-radius: 3px;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+/* End search */
+
 .search{
     position: relative;
     width: 60%;
@@ -78,6 +95,7 @@ align-items: center;
 .search input{
     width: 100%;
     height: 40px;
+    margin-top: 10px;
     padding: 0 40px;
     font-size: 16px;
     outline: none;
@@ -233,6 +251,79 @@ align-items: center;
     font-size: 45px;
     color: #299b63;
 }
+
+
+
+/* start class form style  */
+.formclses{
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #e3dcdc;
+    border-radius: 8px;
+    box-shadow: 0 7px 25px 0 rebeccapurple;
+}
+
+.formclses h1 {
+    text-align: center;
+    color: rgb(114, 120, 180);
+  } 
+
+.formclses h3 {
+    text-align: center;
+    color: rgb(10, 28, 227);
+    margin-top: 5px;
+  } 
+  
+
+  .formclses .Banner img {
+   align-items: center;
+  }
+
+  .formclses ul li {
+    margin-bottom: 5px;
+    background-color: #fff;
+    list-style: none;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .formclses input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+  }
+
+  .formclses button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #619ad7;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .formclses button:hover {
+    background-color: #0056b3;
+    color: #000;
+  }
+
+  .formclses .row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .formclses .col {
+    flex: 1;
+    margin-right: 5px;
+  }
+
+
+
+
+
 
 
 
@@ -412,7 +503,7 @@ input[type="text"]:invalid {
 /* Footer container */
 
 
-footer {
+.footer {
     background-color: #93b8dd; /* Change as needed */
     padding: 20px 0;
   }
@@ -464,10 +555,13 @@ footer {
     }
    
     .mainbar{
-        left: 60px;
+        left: 80px;
         width: calc(100% - 60px);
+        text-align: left;
 
     }
+
+   
 }
 
 
@@ -522,3 +616,5 @@ footer {
 
 
 }
+
+
