@@ -105,3 +105,24 @@ function search(){
   
 //   }
 //   }
+
+// Modes themes 
+
+let icon = document.getElementById("togle");
+let style = document.getElementById("style");
+let togleinner = document.getElementById("togle-inner");
+
+icon.onclick = function() {
+  if(style.href.includes("D Dark.CSS")) {
+    style.href = "DASHBOARD RES.CSS";
+    togleinner.innerText = "Dark";
+  } else if (style.href.includes("DASHBOARD RES.CSS")) {
+    style.href = "D Dark.CSS";
+    togleinner.innerText = "White";
+  }
+};
+
+$(document).ready(function(){
+  let marks; 
+});
+
