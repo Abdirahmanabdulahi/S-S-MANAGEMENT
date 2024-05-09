@@ -10,7 +10,34 @@
     <script src="jquery-3.7.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/d6f6bb0c69.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="DASHBOARD RES.CSS">
+
+    <link rel="stylesheet" href="DASHBOARD RES.CSS" id="style">
+    
+    
+
+    <script>
+        $(document).ready(function(){
+          $(".footer").mouseleave(function(){
+            $(".footer").hide();
+          });
+          $(".footer").mouseenter(function(){
+            $(".footer").show();
+          });
+        });
+        </script>
+
+  <!-- Search code -->
+<script>
+    $(document).ready(function(){
+      $("#find").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#sidebar ul li").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    });
+    </script>
+    <!-- End Search code -->
 
     <title>Dashboard Res....</title>
 </head>
@@ -18,16 +45,28 @@
    
     <div class="container-fluid">
         
-            <div class="topbar">
+            <div class="topbar" id="topbar">
                <!-- <div class="burger" ><i id="menu-btn" class="fas fa-bars"></i></div> -->
-               <div class="burger"><i id="menu-btn" class="fas fa-bars"></i></div>
+               <!-- <div class="burger"><i id="menu-btn" class="fas fa-bars"></i></div> -->
+               <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="togle" />
+                <label class="form-check-label"  id="togle-inner" for="togle">Dark</label>
+              </div>
                
 
                 <div class="search">
                     <input type="text" id="find" class="search-box" placeholder="Search here" onkeyup="search()">
                     <i class="fas fa-search"></i>
                 </div>
+                <!-- <div class="result-box">
+                    <u>
+                        <li>about</li>
+                        <li>contact</li>
+                        <li>register</li>
+                    </u>
+                </div> -->
                 <i class="fas fa-bell"></i>
+        
                 <div class="user">
                     <img src="Img/User.jpg" alt="user">
                 </div>
@@ -116,7 +155,7 @@
             </div> -->
             
     
-            <div class="sidebar sidebar-sm  " >
+            <div class="sidebar sidebar-sm  " id="sidebar" >
                 <div class="logo">
                     <img src="Img/logo.jpg" alt="logo">
                     <h5>AL-MUMTAZ</h5>
@@ -259,7 +298,7 @@
                    
                    </section>
                   
-            </div> <br>
+            </div> 
     
             <div class="footer">
                 <div class="row ">
@@ -287,5 +326,26 @@
     <script src="DASHBOARD RES .JS"></script>
     <script src="USER REGISTER .JS"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+    let icon = $("#togle");
+    let style = $("#style")[0]; // accessing DOM element from jQuery object
+    let togleinner = $("#togle-inner")[0]; // accessing DOM element from jQuery object
+
+    icon.click(function() {
+        if (style.href.includes("DDark.CSS")) {
+            style.href = "DASHBOARD RES.CSS";
+            togleinner.innerText = "Dark";
+        } else if (style.href.includes("DASHBOARD RES.CSS")) {
+            style.href = "DDark.CSS";
+            togleinner.innerText = "White";
+        }
+    });
+
+    let marks; // not sure what this variable is for
+});
+
+    </script>
 </body>
 </html>
