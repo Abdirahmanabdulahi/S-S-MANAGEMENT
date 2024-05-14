@@ -8,14 +8,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="jquery-3.7.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+<script>
+  $(document).ready(function(){
+    $("#van").mouseenter(function(){
+      $("van").hide();
+    });
+    $("#van").mouseleave(function(){
+      $("#van").show();
+    });
+  });
+  </script>
 
-    <title>About Us </title>
+<script>
+  $(document).ready(function(){
+    $("#putin").on("keyup", function() {
+      var value = $(this).val().toLowerCase();
+      $(".collapse ul li").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      });
+    });
+  });
+  </script>
+    <title>S S MANAGEMENT </title>
 </head>
-<body style="background-color: rgb(151, 176, 176);">
-      <section class="section-colortheme">
-        <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-success sticky-top"> 
+<body style="background-color:var(--primary-color);">
+      <section class="section-colortheme sticky-top">
+        <nav id="nav" class="navbar navbar-expand-lg navbar-light  sticky-top"> 
           <div class="container-fluid">
-            <a class="navbar-brand" style="color: var(--secondary-color);" href="#"> <img src="mtz logo.jpg" class="" alt="" width="50"> AL-MUMTAAZ <span style="font-size: 2px; color: blue;">Primary&Secondary School<ion-icon name="school-outline"></ion-icon></span>&nbsp;</a>
+            <a class="navbar-brand" style="color: var(--accent-color);" href="#"> <img src="mtz logo.jpg" class="" alt="" width="50"> AL-MUMTAAZ <span style="font-size: 2px; color: blue;">Primary&Secondary School<ion-icon name="school-outline"></ion-icon></span>&nbsp;</a>
             <div class="form-check form-switch">
               <input class="form-check-input" type="checkbox" role="switch" id="togle" />
               <label class="form-check-label"  id="togle-inner" for="togle">dark</label>
@@ -36,6 +59,8 @@
                           <a class="nav-link" href="Register.html">Register</a></li>
                           <li class="nav-item">
                               <a class="nav-link"  href="Verify.html">Verify</a></li>
+                                    <!-- summit button -->
+   
   
                 <li class="nav-item dropdown">
                   <!-- <a class="nav-link dropdown-toggle" style="color:var(--secondary-color)"  href="DASHBOARD RES.HTML" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -64,22 +89,25 @@
                   </ul>
                 </li> &nbsp; &nbsp; -->
                
-                <button class="btn btn-sm btn-info btn-outline-primary" type="submit"><a style="color: aliceblue; width: 70%; text-decoration: none;" href="login.html">LogIn </a></button>&nbsp;
-                <button class="btn btn-sm btn-primary btn-outline-secondary" type="submit"><a style="color: rgb(10, 10, 10); width: 70%; text-decoration: none;" href="Sing Up.html">SingUp</a></button>
+                <button class="btn btn-sm btn-primary btn-outline-primary" type="submit"><a style="color:var(--accent-color); width: 70%; text-decoration: none;" href="login.html">LogIn </a></button>&nbsp;
+                <button class="btn btn-sm btn-primary btn-outline-secondary" type="submit"><a style="color: var(--accent-color); width: 70%; text-decoration: none;" href="Sing Up.html">SingUp</a></button>
               </ul> &nbsp;
               <form class="d-flex">
                 <!-- <input class="form-control me-2" type="search" placeholder="Search "  aria-label="Search" >
                 <button class="btn btn-sm  btn-light btn-outline-dark" type="submit">Search<ion-icon name="pencil-outline"></ion-icon>&nbsp;</button>
               -->
               <input id="putin"  type="search" class="form-control" placeholder="Search" style="width: 70%;height: 60%;" aria-label="Search" aria-describedby="button-addon2">
-              <button class="btn btn-warning  btn-sm  btn-outline-primary"  name="search"  type="submit" id="button-addon2"><ion-icon name="search-outline"></ion-icon>Search</button>
+              <button class="btn btn-primary btn-sm" type="button"onclick="document.getElementById('dtime').innerHTML = Date()">Date&Time.</button>
+  
+  <p id="dtime"></p>
            
               </form>
             </div>
           </div>
         </nav>
+        </section> <br>
 
- <h1 class="h1  text-light text-center margin-5rem sticky-top" style=" margin-top: 100px;">ABOUT AL-MUMTAZ</h1>
+ <h1 class="h1  text-light text-center margin-5rem " style=" margin-top: 100px;">ABOUT AL-MUMTAZ</h1>
 
 
   
@@ -94,7 +122,7 @@
       <div class=" container align-item-center">
         <div class="row">
   
-          <div class="col-6" style="margin-top: 10%;  margin-bottom: 10%;">
+          <div class="col-6" id="AboutTags" style="margin-top: 10%;  margin-bottom: 10%;">
             <h3><b>Welcome TO AL-MUMTAZ</b><br>Primary&Secondary School</h3>
            
             <p class="h6" style="font-family: 'Times New Roman', Times, serif;">  Al-mumtaz Primary&Secondary School (MPSS) is private
@@ -114,17 +142,17 @@
 
   </div> 
 
-  <div class="row" style="margin:50px;">
+  <div  class="row" style="margin:50px;" >
   
-    <div class="col-6" style="margin-top: 10%;  margin-bottom: 10%;">
-      <p class="h2" style="font-family: 'Times New Roman', Times, serif; color: green;">  We are different and we like it that way. Al-mumtaz  is professionally oriented School.</p> <br>
+    <div id="Aboutcolors" class="col-6" style="margin-top: 10%;  margin-bottom: 10%;">
+      <p class="h2" style="font-family: 'Times New Roman', Times, serif; color:--other-color;">  We are different and we like it that way. Al-mumtaz  is professionally oriented School.</p> <br>
     
       </div>
 
-      <div class="col-6" style="background-color: green; text-align: center; ">
-        <h1 style="color: white;"><b>18&nbsp;+</b></h1>
+      <div id="Aboutbox" class="col-6" style=" text-align: center; ">
+        <h1 ><b>18&nbsp;+</b></h1>
         <img src="mtz logo.jpg" alt="" style="width: 120px; height: 120px; text-align: center; margin-top: 20px;"> <br><br><br>
-        <p style="color: white;">Years of Experience</p>
+        <h6 id="h6">Years of Experience</h6>
       </div>
 
         <!-- <div class="col-6" style="margin-top: 10%; margin-bottom: 10%;  ">
@@ -162,7 +190,7 @@
       <div class="card h-100">
        
         <div class="card-body" id="cardbody">
-          <h1 class="h1 text-success"><ion-icon name="medkit-outline" style=" padding-top: 30px; margin-left: 30px; color: green;"></ion-icon> &nbsp;Our Vision</h1><br><br>
+          <h1 ><ion-icon name="medkit-outline" style=" padding-top: 30px; margin-left: 30px; "></ion-icon> &nbsp;Our Vision</h1><br><br>
       <p style="  font-size: 20px; text-align: start; font-family: 'Times New Roman', Times, serif;  margin-left: 30px;">To become a university of international reputation and
          a distinguished institution of higher learning in research and innovation.</p>
    </div>
@@ -172,7 +200,7 @@
       <div class="card h-100">
         
         <div class="card-body" id="cardbody">
-          <h1 class="h1 text-success"><ion-icon name="medkit-outline" style=" padding-top: 30px; margin-left: 30px; color: green;"></ion-icon> &nbsp;Our Mission</h1><br><br>
+          <h1 ><ion-icon name="medkit-outline" style=" padding-top: 30px; margin-left: 30px; "></ion-icon> &nbsp;Our Mission</h1><br><br>
       <p style="  font-family: 'Times New Roman', Times, serif; font-size: 20px; text-align: start; margin-left: 30px;">To contribute to the advancement of knowledge and learning through research and education. <br> <br>
         To produce graduates who meet the expectations of the nation. <br><br> To develop innovative and responsible leaders who are capable of dealing with changes in the global environment.</p>
    </div>
@@ -183,7 +211,7 @@
       
         <div class="card-body" id="cardbody" style=" font-family: 'Times New Roman', Times, serif;">
 
-          <h1 class="h1 text-success"><ion-icon name="medkit-outline" style=" padding-top: 30px; margin-left: 30px; color: green;"></ion-icon> &nbsp;Core Values</h1><br><br>
+          <h1><ion-icon name="medkit-outline" style=" padding-top: 30px; margin-left: 30px; "></ion-icon> &nbsp;Core Values</h1><br><br>
       
           <li style="list-style: none;  font-size: 35px; margin-left: 20px;">Integrity</li>
           <li style="list-style: none;  font-size: 35px; margin-left: 20px;">Academic Rigor</li>
