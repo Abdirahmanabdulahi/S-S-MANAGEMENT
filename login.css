@@ -1,4 +1,12 @@
      /* Styles for the login form */
+     :root{
+        --primary-color: #0656f8;
+        --secondary-color:#dcb2b2 ;
+        --accent-color:#fefefe ;
+        --other-color: rgb(190, 240, 9);
+        }
+
+
      #login-form {
       max-width: 300px;
       margin: 50px auto;
@@ -12,6 +20,7 @@
       display:block;
       margin-bottom: 10px;
       font-weight: bold;
+      color: var(--accent-color);
      
   }
 
@@ -28,8 +37,8 @@
   #login-form input[type="submit"] {
       width: 100%;
       padding: 10px;
-      background-color: #210b8e;
-      color: #fff;
+      background-color:var(--other-color);
+      color: var(--primary-color);
       border: none;
       border-radius: 5px;
       cursor: pointer;
