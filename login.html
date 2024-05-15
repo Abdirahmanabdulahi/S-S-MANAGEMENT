@@ -4,15 +4,39 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="login.css">
     <link rel="stylesheet" href="myschool.CSS" id="style">
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="jquery-3.7.1.min.js"></script>
-    <style>
-   
-    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+<script>
+  $(document).ready(function(){
+    $("#van").mouseenter(function(){
+      $("van").hide();
+    });
+    $("#van").mouseleave(function(){
+      $("#van").show();
+    });
+  });
+  </script>
+
+<script>
+  $(document).ready(function(){
+    $("#putin").on("keyup", function() {
+      var value = $(this).val().toLowerCase();
+      $(".collapse ul li").filter(function() {
+        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+      });
+    });
+  });
+  </script>
+</head>
+
+
+
     <!-- <script>
       // $('#login').addEventListener('submit', function(event) {
       //     event.preventDefault();
@@ -80,76 +104,78 @@
   </script> -->
     <title>Login Page</title>
   </head>
-  <body style="background-color: rgb(151, 176, 176);" class="mebg" >
-        
-          <nav id="nav" class="navbar navbar-expand-lg navbar-light bg-success sticky-top"> 
-            <div class="container-fluid">
-              <a class="navbar-brand" style="color: var(--secondary-color);" href="#"> <img src="mtz logo.jpg" class="" alt="" width="50"> AL-MUMTAAZ <span style="font-size: 2px; color: blue;">Primary&Secondary School<ion-icon name="school-outline"></ion-icon></span>&nbsp;</a>
-              <div class="form-check form-switch">
-                <input class="form-check-input" type="checkbox" role="switch" id="togle" />
-                <label class="form-check-label"  id="togle-inner" for="togle">dark</label>
-              </div>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>&nbsp;&nbsp;
-              <div class="collapse navbar-collapse" id="navbarSupportedContent" >
-                <ul id="mnu" class="navbar-nav me-auto mb-2 mb-lg-0 sticky-top" >
-                  <li class="nav-item">
-                    <a class="nav-link active"  aria-current="page" href="index.html">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link"  href="About Us.html">About</a></li>
+  <body style="background-color:var(--primary-color);">
+    <section class="section-colortheme sticky-top">
+      <nav id="nav" class="navbar navbar-expand-lg navbar-light  sticky-top"> 
+        <div class="container-fluid">
+          <a class="navbar-brand" style="color: var(--accent-color);" href="#"> <img src="mtz logo.jpg" class="" alt="" width="50"> AL-MUMTAAZ <span style="font-size: 2px; color: blue;">Primary&Secondary School<ion-icon name="school-outline"></ion-icon></span>&nbsp;</a>
+          <div class="form-check form-switch">
+            <input class="form-check-input" type="checkbox" role="switch" id="togle" />
+            <label class="form-check-label"  id="togle-inner" for="togle">dark</label>
+          </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>&nbsp;&nbsp;
+          <div class="collapse navbar-collapse" id="navbarSupportedContent" >
+            <ul id="mnu" class="navbar-nav me-auto mb-2 mb-lg-0 sticky-top" >
+              <li class="nav-item">
+                <a class="nav-link active"  aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="About Us.html">About</a></li>
+                <li class="nav-item">
+                    <a class="nav-link"  href="contact.html">Contact</a></li>
                     <li class="nav-item">
-                        <a class="nav-link"  href="contact.html">Contact</a></li>
+                        <a class="nav-link" href="Register.html">Register</a></li>
                         <li class="nav-item">
-                            <a class="nav-link" href="Register.html">Register</a></li>
-                            <li class="nav-item">
-                                <a class="nav-link"  href="Verify.html">Verify</a></li>
-                                      <!-- summit button -->
-     
-    
-                  <li class="nav-item dropdown">
-                    <!-- <a class="nav-link dropdown-toggle" style="color:var(--secondary-color)"  href="DASHBOARD RES.HTML" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Dashboard
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                      <li><a class="dropdown-item" href="">DASHBOARD</a></li>
-                      <li><a class="dropdown-item" href="Teacher.html"><ion-icon name="man-outline"></ion-icon>TEACHEARS MANAGE</a></li>
-                      <li><a class="dropdown-item" href="Students.html"><ion-icon name="people-outline"></ion-icon>&nbsp;STUDENTS MANAGE</a></li>
-                      <li><a class="dropdown-item" href="Classes.html"><ion-icon name="home"></ion-icon>&nbsp;CLASS MANAGE </a></li>
-                      <li><a class="dropdown-item" href="Exam.html"><ion-icon name="pencil-outline"></ion-icon>&nbsp;EXAM MANAGE  </a></li>
-                      <li><a class="dropdown-item" href="Attendence.html"><ion-icon name="checkmark-done-outline"></ion-icon>ATTENDANCE MANAGE</a></li>
-                      <li><a class="dropdown-item" href=""><ion-icon name="stats-chart-outline"></ion-icon>&nbsp;ACTIVITIES MANAGE</a></li>
-                      <li><a class="dropdown-item" href=""><ion-icon name="reader-outline"></ion-icon>&nbsp;ACADEMIC MANAGE</a></li>
-                      <li><a class="dropdown-item" href=""><ion-icon name="accessibility"></ion-icon>&nbsp; EMPLOYEE MANAGE</a></li>
-                      <li><a class="dropdown-item" href="finance.html"><ion-icon name="logo-usd"></ion-icon>&nbsp;FINANCE MANAGE</a></li>
-                      <li><a class="dropdown-item" href=""><ion-icon name="calendar-outline"></ion-icon>&nbsp;EVENTS MANAGE </a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      <li><a class="dropdown-item" href=""><ion-icon name="people-circle-outline"></ion-icon>&nbsp;Meeting </a></li>
-                      <li><a class="dropdown-item" href=""><ion-icon name="warning"></ion-icon>&nbsp;REPORTS</a></li>
-                      <li><a class="dropdown-item" href=""><ion-icon name="person"></ion-icon>&nbsp;USERS MANAGE</a></li>
-                      <li><a class="dropdown-item" href=""><ion-icon name="receipt"></ion-icon>&nbsp;COMPLAIN</a></li>
-                      <li><a class="dropdown-item" href=""><ion-icon name="mail-outline"></ion-icon>&nbsp; SMS </a></li>
-                      <li><a class="dropdown-item" href=""><ion-icon name="settings-outline"></ion-icon>&nbsp;SETTING</a></li>
-                    </ul>
-                  </li> &nbsp; &nbsp; -->
-                 
-                  <button class="btn btn-sm btn-info btn-outline-primary" type="submit"><a style="color: black; width: 70%; text-decoration: none;" href="login.html">LogIn </a></button>&nbsp;
-                  <button class="btn btn-sm btn-primary btn-outline-secondary" type="submit"><a style="color: black; width: 70%; text-decoration: none;" href="Sing Up.html">SingUp</a></button>
-                </ul> &nbsp;
-                <form class="d-flex">
-                  <!-- <input class="form-control me-2" type="search" placeholder="Search "  aria-label="Search" >
-                  <button class="btn btn-sm  btn-light btn-outline-dark" type="submit">Search<ion-icon name="pencil-outline"></ion-icon>&nbsp;</button>
-                -->
-                <input id="putin" type="search" class="form-control" placeholder="Search" style="width: 70%;height: 60%;" aria-label="Search" aria-describedby="button-addon2">
-                <button class="btn btn-warning  btn-sm  btn-outline-primary"  name="search"  type="submit" id="button-addon2"><ion-icon name="search-outline"></ion-icon>Search</button>
+                            <a class="nav-link"  href="Verify.html">Verify</a></li>
+                                  <!-- summit button -->
+ 
+
+              <li class="nav-item dropdown">
+                <!-- <a class="nav-link dropdown-toggle" style="color:var(--secondary-color)"  href="DASHBOARD RES.HTML" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dashboard
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="">DASHBOARD</a></li>
+                  <li><a class="dropdown-item" href="Teacher.html"><ion-icon name="man-outline"></ion-icon>TEACHEARS MANAGE</a></li>
+                  <li><a class="dropdown-item" href="Students.html"><ion-icon name="people-outline"></ion-icon>&nbsp;STUDENTS MANAGE</a></li>
+                  <li><a class="dropdown-item" href="Classes.html"><ion-icon name="home"></ion-icon>&nbsp;CLASS MANAGE </a></li>
+                  <li><a class="dropdown-item" href="Exam.html"><ion-icon name="pencil-outline"></ion-icon>&nbsp;EXAM MANAGE  </a></li>
+                  <li><a class="dropdown-item" href="Attendence.html"><ion-icon name="checkmark-done-outline"></ion-icon>ATTENDANCE MANAGE</a></li>
+                  <li><a class="dropdown-item" href=""><ion-icon name="stats-chart-outline"></ion-icon>&nbsp;ACTIVITIES MANAGE</a></li>
+                  <li><a class="dropdown-item" href=""><ion-icon name="reader-outline"></ion-icon>&nbsp;ACADEMIC MANAGE</a></li>
+                  <li><a class="dropdown-item" href=""><ion-icon name="accessibility"></ion-icon>&nbsp; EMPLOYEE MANAGE</a></li>
+                  <li><a class="dropdown-item" href="finance.html"><ion-icon name="logo-usd"></ion-icon>&nbsp;FINANCE MANAGE</a></li>
+                  <li><a class="dropdown-item" href=""><ion-icon name="calendar-outline"></ion-icon>&nbsp;EVENTS MANAGE </a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href=""><ion-icon name="people-circle-outline"></ion-icon>&nbsp;Meeting </a></li>
+                  <li><a class="dropdown-item" href=""><ion-icon name="warning"></ion-icon>&nbsp;REPORTS</a></li>
+                  <li><a class="dropdown-item" href=""><ion-icon name="person"></ion-icon>&nbsp;USERS MANAGE</a></li>
+                  <li><a class="dropdown-item" href=""><ion-icon name="receipt"></ion-icon>&nbsp;COMPLAIN</a></li>
+                  <li><a class="dropdown-item" href=""><ion-icon name="mail-outline"></ion-icon>&nbsp; SMS </a></li>
+                  <li><a class="dropdown-item" href=""><ion-icon name="settings-outline"></ion-icon>&nbsp;SETTING</a></li>
+                </ul>
+              </li> &nbsp; &nbsp; -->
              
-                </form>
-              </div>
-            </div>
-          </nav>
-          </section> <br>
+              <button class="btn btn-sm btn-primary btn-outline-primary" type="submit"><a style="color:var(--accent-color); width: 70%; text-decoration: none;" href="login.html">LogIn </a></button>&nbsp;
+              <button class="btn btn-sm btn-primary btn-outline-secondary" type="submit"><a style="color: var(--accent-color); width: 70%; text-decoration: none;" href="Sing Up.html">SingUp</a></button>
+            </ul> &nbsp;
+            <form class="d-flex">
+              <!-- <input class="form-control me-2" type="search" placeholder="Search "  aria-label="Search" >
+              <button class="btn btn-sm  btn-light btn-outline-dark" type="submit">Search<ion-icon name="pencil-outline"></ion-icon>&nbsp;</button>
+            -->
+            <input id="putin"  type="search" class="form-control" placeholder="Search" style="width: 70%;height: 60%;" aria-label="Search" aria-describedby="button-addon2">
+            <button class="btn btn-primary btn-sm" type="button"onclick="document.getElementById('dtime').innerHTML = Date()">Date&Time.</button>
+
+<p id="dtime"></p>
+         
+            </form>
+          </div>
+        </div>
+      </nav>
+      </section> <br>
 
     
 <section id="logsection" class="img-center"  style="margin-top: 10px; margin-bottom: 10px;">
@@ -162,12 +188,12 @@
             <label for="password">Password:</label>
             <input  type="password" id="password" placeholder="Enter Your Password" required>
 
-            <input  type="submit" value="Login">
+            <input id="logg-btn"  type="submit" value="Login">
             <div id="login-message"></div>
           </form> <br>
 
          <!-- summit button -->
-   <div class="d-grid gap-2 col-6 mx-auto d-flex">
+   <div class="d-grid gap-2 col-6 mx-auto d-flex" id="HideAndShow-btn">
     <button id="hide" class="btn btn-outline-secondary" type="submit">Hide</button>
     <button id="show" class="btn btn-outline-secondary" type="submit">Show</button>
     
