@@ -270,6 +270,81 @@ input[type="text"]:invalid {
 }
 
 
+/* h , P & a tags */
+h4{
+  color: white}
+
+#ourActivities h5{
+  color: rgb(253, 249, 249);
+}
+
+#ourActivities p{
+  color: rgb(252, 250, 250);
+}
+
+
+.verifyForm h1{
+  color: rgb(253, 249, 249);
+}
+
+.verifyForm .btn{
+  background-color: black;
+}
+
+#contacth1{ color: white;}
+
+.singgup #singgp{
+  color: white;
+}
+
+.singgup #butt{
+  background-color: black;
+  color: white;
+}
+/* H tags */
+
+
+
+/* About Us */
+#AboutTags h3{
+  color: white;
+  }
+  
+  #AboutTags p{
+  color: white;
+  }
+  
+  #Aboutcolors p{
+    color: white;
+  
+  }
+  
+  #Aboutbox{
+   background-color: black; 
+  }
+  
+  #Aboutbox h1{
+   color: white; 
+  }
+  
+  #Aboutbox #h6{
+   color: white; 
+  }
+  
+  .h6{
+   color: white; 
+  }
+  
+  #cardbody p,li{
+    color:white;
+  }
+  #cardbody h1,ion-icon{
+    color: white;
+  }
+  
+  
+  /* End about us */
+
 
 .gradeA {
   color: green;
