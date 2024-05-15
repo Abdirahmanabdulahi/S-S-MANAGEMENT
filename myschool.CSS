@@ -9,15 +9,92 @@ marquee{ animation:3.5s infinite linear; animation-duration: 0.1s;}
 
 /* End Banner section*/
 
+/* ___________________________carosul section______________________________ */
+
+#cursal{
+background: linear-gradient(rgba(0,0,0,0,7), rgba(0,0,0,0,7));
+position: absolute;
+display: flex !important;
+}
+
+#cursal h5{
+  width: 65%;
+  font-size: 30px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background: var(--accent-color);
+  color: var(--primary-color);
+  text-align: left;
+  position: relative;
+  top: 61px;
+
+}
+
+#cursal p{
+  width: 70%;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background: var(--accent-color);
+  color: var(--primary-color);
+  top: 60px;
+  position: relative;
+  text-align: right;
+}
+
+#cursal p:hover{
+  color: var(--accent-color);
+  background: var(--primary-color); 
+}
+
+#cursal h5:hover{
+  color: var(--accent-color);
+  background: var(--primary-color); 
+}
+
+/* #cursal h5{
+  font-size: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--primary-color);
+  text-align: right;
+}
+#cursal p{
+  font-size: 40px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--primary-color);
+  text-align: right;
+} */
+
 /* cardbody */
 #cardbody{
-  background-color: #f2f2f2;
+  background-color: #160baa;
+}
+#cardbody h2{
+  color: var(--accent-color);
+}
+/* our activities */
+#ourActivities h2{
+  color:var(--accent-color);
+}
+#cardbody h2{
+  color: var(--accent-color);
 }
 
 /* footer */
 
 footer {
-  background-color: rgb(154, 156, 156);
+  background-color: var(--secondary-color);
+  color:var(--accent-color);
+  
+  padding: 20px 0; /* Adjust padding as needed */
+}
+
+.bottom-footer ion-icon{
+ 
+  color:var(--accent-color);
+  
   padding: 20px 0; /* Adjust padding as needed */
 }
 
@@ -85,6 +162,10 @@ section .content .title{ font-size: 21px; font-weight: 600; margin: 30px 0 10px 
 
 /* End home section*/
 
+.navbar{
+  background-color:var(--secondary-color);
+  color: var(--accent-color);
+}
 
 nav.sticky{ 
   position: fixed;
@@ -92,9 +173,10 @@ nav.sticky{
   left: 0;
 }
 
-.navbar  .nav-link{
-   
-  color: rgb(10, 10, 10);
+
+
+#navbarSupportedContent .nav-link{
+  color: var(--accent-color);
 }
 
 
@@ -172,6 +254,93 @@ input[type="text"]:invalid {
   color: red;
 }
 
+/* About Us */
+#AboutTags h3{
+color: var(--accent-color);
+}
+
+#AboutTags p{
+color: var(--secondary-color);
+}
+
+#Aboutcolors p{
+  color: var(--secondary-color);
+
+}
+
+#Aboutbox{
+ background-color: var(--other-color); 
+}
+
+#Aboutbox h1{
+ color: var(--primary-color); 
+}
+
+#Aboutbox #h6{
+ color: var(--primary-color); 
+}
+
+.h6{
+ color: var(--secondary-color); 
+}
+
+#cardbody p,li{
+  color: var(--secondary-color);
+}
+#cardbody h1,ion-icon{
+  color: var(--other-color);
+}
+
+
+/* End about us */
+
+
+
+/* h , P & a tags */
+h4{
+  color: var(--secondary-color);
+}
+
+
+#ourActivities h5{
+  color: var(--other-color);
+}
+
+#ourActivities p{
+  color: var(--secondary-color);
+}
+
+#ourFacilityh4{
+  color: var(--other-color);
+}
+
+#contacth1{ color: var(--accent-color);}
+/* H tags */
+
+/* Start buttoms */
+#Registerbtn{
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+#HideAndShow-btn button{
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+/* End  buttoms */
+
+
+
+/* Start Forms */
+.singgup #singgp{
+  color: var(--secondary-color);
+}
+.singgup #butt{
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+/* Start Forms */
+
 
 
 /* start verify form */
@@ -211,9 +380,32 @@ input[type="text"]:invalid {
         background-color: #0056b3;
     }
 
+    .verifyForm h1{
+      color: var(--accent-color);
+    }
+    
+    .verifyForm .btn{
+      background-color: var(--secondary-color);
+    }
+/* End verfy */
 
 
+.section-colortheme{
+  color:var(--secondary-color);
+}
 
+.section-colortheme h1{
+  color:var(--accent-color);
+}
+
+.section-colortheme  ion-icon{
+  color:var(--accent-color);
+}
+
+.section-colortheme #NTBprimary:hover{
+  color:var(--primary-color);
+  background-color: var(--accent-color);
+}
 
 
 
@@ -233,13 +425,12 @@ input[type="text"]:invalid {
 
 
 /* starts code of dark and white modes */
-/* :root{
-  --primary-color: #edf2fc;
-  --secondary-color:#212121 ;
+:root{
+  --primary-color: #0656f8;
+  --secondary-color:#dcb2b2 ;
+  --accent-color:#fefefe ;
+  --other-color: rgb(190, 240, 9);
   }
   
   
-  .dark-theme{
-  --primary-color:#000106;
-  --secondary-color:#fff ;
-  } */
+  
