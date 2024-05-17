@@ -156,7 +156,7 @@ body {
 
 .sidebar ul li:hover,
 .sidebar ul li.hovered {
-  background-color: rgb(250, 231, 245);
+  background-color: rgb(250, 231, 245) !important;
 }
 
 .sidebar ul li:nth-child(1) {
@@ -253,9 +253,8 @@ body {
 
 .toggle {
   position: relative;
-  width: 60px;
-  height: 60px;
-  display: flex;
+  
+  display: none;
   justify-content: center;
   align-items: center;
   font-size: 2.5rem;
@@ -698,6 +697,9 @@ input[type="text"]:invalid {
     left: 0;
   }
   .toggle {
+    width: 60px;
+  height: 60px;
+    display: flex;
     z-index: 10001;
   }
   .mainbar.active .toggle {
@@ -707,3 +709,5 @@ input[type="text"]:invalid {
     left: initial;
   }
 }
+
+/* ===================== RESPONSIVE (2) ==================== */
