@@ -645,7 +645,7 @@ input[type="text"]:invalid {
 }
 
 /* ====================== Responsive Design ========================== */
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
   .sidebar {
     left: -300px;
   }
@@ -708,6 +708,78 @@ input[type="text"]:invalid {
     right: 0;
     left: initial;
   }
-}
+} */
 
 /* ===================== RESPONSIVE (2) ==================== */
+
+/* responsive Starts  */
+@media (max-width:769px){
+  .sidebar{
+      width: 60px;
+      
+  }
+ 
+  .mainbar{
+      left: 80px;
+      width: calc(100% - 60px);
+      text-align: left;
+
+  }
+
+ 
+}
+
+
+@media (max-width:880px){
+  .cards{
+      grid-template-columns: repeat(2, 1fr);
+
+  }
+  .charts{
+      grid-template-columns: repeat 1fr;
+ }
+
+ #doub-chart{
+  padding: 50px;
+ }
+
+}
+
+@media (max-width:500px){
+  .topbar{
+      grid-template-columns: repeat(1fr, 5fr, 00.4fr, 1fr);
+
+  }
+  .cards{
+      grid-template-columns: repeat 1fr;
+ }
+
+ .logo h5{
+  font-size: 20px;
+ }
+ .search{
+  width: 80%;
+ }
+ .search input{
+  padding: 0 20px;
+ }
+ .fa-bell{
+  margin-right: 5px;
+ }
+ .user{
+  width: 40px;
+  height: 40px;
+ }
+
+ #doub-chart{
+  padding: 10px;
+ }
+
+ #doubhnut{
+  padding: 0;
+ }
+
+
+}
+
+
